@@ -1,0 +1,52 @@
+# ---------------------------------------------------------------------------
+# PARTICIPANT DATA -- NEVER COMMIT
+# ---------------------------------------------------------------------------
+# Raw sessions contain Prolific participant IDs. Those are pseudonymous
+# identifiers that can be linked back to a person through the platform, so they
+# are personal data under GDPR and almost certainly under your ethics approval.
+# Keep them off GitHub entirely, including in private repos.
+#
+# Publish only the de-identified derived tables, and only once you have checked
+# that participant_id has been replaced with a study-local code.
+data/raw/
+data/raw_sim/
+data/derived/
+*.session.json
+trustloop_*.json
+
+# Figures are regenerable; keep the repo light. Delete this line if you would
+# rather version the exact figures that went into a submission.
+figures/
+
+# ---------------------------------------------------------------------------
+# Secrets
+# ---------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Node / build
+# ---------------------------------------------------------------------------
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

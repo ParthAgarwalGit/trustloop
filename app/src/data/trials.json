@@ -1,0 +1,1146 @@
+{
+  "errorSlots": [
+    4,
+    7,
+    9
+  ],
+  "trials": [
+    {
+      "id": "S01",
+      "slot": 1,
+      "domain": "laptop",
+      "prompt": "Find me a laptop under $900 with at least 16 GB of RAM and a user rating of 4.3 or higher.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "price",
+          "op": "lt",
+          "value": 900,
+          "label": "Under $900"
+        },
+        {
+          "id": "c2",
+          "field": "ram_gb",
+          "op": "gte",
+          "value": 16,
+          "label": "At least 16 GB RAM"
+        },
+        {
+          "id": "c3",
+          "field": "rating",
+          "op": "gte",
+          "value": 4.3,
+          "label": "Rated 4.3 or higher"
+        }
+      ],
+      "candidateIds": [
+        "L01",
+        "L02",
+        "L12",
+        "L06",
+        "L14"
+      ],
+      "recommendedId": "L01",
+      "specCardFields": [
+        "price",
+        "ram_gb",
+        "storage_gb",
+        "weight_kg",
+        "battery_hours",
+        "rating"
+      ],
+      "isErrorTrial": false,
+      "errorType": null,
+      "violatedConstraintIds": [],
+      "compliantCandidateIds": [
+        "L01"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Under $900, At least 16 GB RAM, Rated 4.3 or higher."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "1 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Aeris Slim 14 as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "price",
+          "fieldLabel": "Price",
+          "constraintLabel": "Under $900",
+          "statedValue": 829,
+          "statedValueText": "$829",
+          "catalogValue": 829,
+          "catalogValueText": "$829",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "ram_gb",
+          "fieldLabel": "RAM",
+          "constraintLabel": "At least 16 GB RAM",
+          "statedValue": 16,
+          "statedValueText": "16 GB",
+          "catalogValue": 16,
+          "catalogValueText": "16 GB",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c3",
+          "field": "rating",
+          "fieldLabel": "User rating",
+          "constraintLabel": "Rated 4.3 or higher",
+          "statedValue": 4.4,
+          "statedValueText": "4.4/5",
+          "catalogValue": 4.4,
+          "catalogValueText": "4.4/5",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S02",
+      "slot": 2,
+      "domain": "trip",
+      "prompt": "Find me a trip package with a total price under $800, a hotel rated 4.0 or better, and a direct flight (no stops).",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "total_price",
+          "op": "lt",
+          "value": 800,
+          "label": "Total under $800"
+        },
+        {
+          "id": "c2",
+          "field": "hotel_rating",
+          "op": "gte",
+          "value": 4.0,
+          "label": "Hotel rated 4.0+"
+        },
+        {
+          "id": "c3",
+          "field": "stops",
+          "op": "eq",
+          "value": 0,
+          "label": "Direct flight"
+        }
+      ],
+      "candidateIds": [
+        "T04",
+        "T02",
+        "T11",
+        "T07",
+        "T10"
+      ],
+      "recommendedId": "T11",
+      "specCardFields": [
+        "total_price",
+        "flight_price",
+        "hotel_night",
+        "nights",
+        "hotel_rating",
+        "stops"
+      ],
+      "isErrorTrial": false,
+      "errorType": null,
+      "violatedConstraintIds": [],
+      "compliantCandidateIds": [
+        "T04",
+        "T11"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Total under $800, Hotel rated 4.0+, Direct flight."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "2 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Valencia - Ruzafa Loft as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "total_price",
+          "fieldLabel": "Total price",
+          "constraintLabel": "Total under $800",
+          "statedValue": 601,
+          "statedValueText": "$601",
+          "catalogValue": 601,
+          "catalogValueText": "$601",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "hotel_rating",
+          "fieldLabel": "Hotel rating",
+          "constraintLabel": "Hotel rated 4.0+",
+          "statedValue": 4.2,
+          "statedValueText": "4.2/5",
+          "catalogValue": 4.2,
+          "catalogValueText": "4.2/5",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c3",
+          "field": "stops",
+          "fieldLabel": "Stops",
+          "constraintLabel": "Direct flight",
+          "statedValue": 0,
+          "statedValueText": "0",
+          "catalogValue": 0,
+          "catalogValueText": "0",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S03",
+      "slot": 3,
+      "domain": "laptop",
+      "prompt": "I need a laptop under $800 that weighs less than 1.3 kg and gets at least 8 hours of battery.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "price",
+          "op": "lt",
+          "value": 800,
+          "label": "Under $800"
+        },
+        {
+          "id": "c2",
+          "field": "weight_kg",
+          "op": "lt",
+          "value": 1.3,
+          "label": "Lighter than 1.3 kg"
+        },
+        {
+          "id": "c3",
+          "field": "battery_hours",
+          "op": "gte",
+          "value": 8,
+          "label": "8+ hours battery"
+        }
+      ],
+      "candidateIds": [
+        "L03",
+        "L08",
+        "L17",
+        "L14",
+        "L06"
+      ],
+      "recommendedId": "L03",
+      "specCardFields": [
+        "price",
+        "ram_gb",
+        "storage_gb",
+        "weight_kg",
+        "battery_hours",
+        "rating"
+      ],
+      "isErrorTrial": false,
+      "errorType": null,
+      "violatedConstraintIds": [],
+      "compliantCandidateIds": [
+        "L03",
+        "L17",
+        "L06"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Under $800, Lighter than 1.3 kg, 8+ hours battery."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "3 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Corvid Air 13 as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "price",
+          "fieldLabel": "Price",
+          "constraintLabel": "Under $800",
+          "statedValue": 749,
+          "statedValueText": "$749",
+          "catalogValue": 749,
+          "catalogValueText": "$749",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "weight_kg",
+          "fieldLabel": "Weight",
+          "constraintLabel": "Lighter than 1.3 kg",
+          "statedValue": 1.18,
+          "statedValueText": "1.18 kg",
+          "catalogValue": 1.18,
+          "catalogValueText": "1.18 kg",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c3",
+          "field": "battery_hours",
+          "fieldLabel": "Battery life",
+          "constraintLabel": "8+ hours battery",
+          "statedValue": 12.0,
+          "statedValueText": "12 h",
+          "catalogValue": 12.0,
+          "catalogValueText": "12 h",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S04",
+      "slot": 4,
+      "domain": "laptop",
+      "prompt": "Find a laptop under $900 with at least 512 GB of storage that weighs under 1.5 kg.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "price",
+          "op": "lt",
+          "value": 900,
+          "label": "Under $900"
+        },
+        {
+          "id": "c2",
+          "field": "storage_gb",
+          "op": "gte",
+          "value": 512,
+          "label": "512 GB+ storage"
+        },
+        {
+          "id": "c3",
+          "field": "weight_kg",
+          "op": "lt",
+          "value": 1.5,
+          "label": "Lighter than 1.5 kg"
+        }
+      ],
+      "candidateIds": [
+        "L04",
+        "L07",
+        "L15",
+        "L13",
+        "L12"
+      ],
+      "recommendedId": "L04",
+      "specCardFields": [
+        "price",
+        "ram_gb",
+        "storage_gb",
+        "weight_kg",
+        "battery_hours",
+        "rating"
+      ],
+      "isErrorTrial": true,
+      "errorType": "dropped_constraint",
+      "violatedConstraintIds": [
+        "c3"
+      ],
+      "compliantCandidateIds": [
+        "L07",
+        "L15",
+        "L12"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Under $900, 512 GB+ storage."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "4 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Valta Book 14 as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "price",
+          "fieldLabel": "Price",
+          "constraintLabel": "Under $900",
+          "statedValue": 869,
+          "statedValueText": "$869",
+          "catalogValue": 869,
+          "catalogValueText": "$869",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "storage_gb",
+          "fieldLabel": "Storage",
+          "constraintLabel": "512 GB+ storage",
+          "statedValue": 512,
+          "statedValueText": "512 GB",
+          "catalogValue": 512,
+          "catalogValueText": "512 GB",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": [
+        "c3"
+      ]
+    },
+    {
+      "id": "S05",
+      "slot": 5,
+      "domain": "trip",
+      "prompt": "I want a trip under $700 total with a refundable booking and a hotel rated at least 4.2.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "total_price",
+          "op": "lt",
+          "value": 700,
+          "label": "Total under $700"
+        },
+        {
+          "id": "c2",
+          "field": "refundable",
+          "op": "eq",
+          "value": true,
+          "label": "Refundable"
+        },
+        {
+          "id": "c3",
+          "field": "hotel_rating",
+          "op": "gte",
+          "value": 4.2,
+          "label": "Hotel rated 4.2+"
+        }
+      ],
+      "candidateIds": [
+        "T03",
+        "T06",
+        "T07",
+        "T10",
+        "T04"
+      ],
+      "recommendedId": "T03",
+      "specCardFields": [
+        "total_price",
+        "flight_price",
+        "hotel_night",
+        "nights",
+        "hotel_rating",
+        "stops"
+      ],
+      "isErrorTrial": false,
+      "errorType": null,
+      "violatedConstraintIds": [],
+      "compliantCandidateIds": [
+        "T03",
+        "T06"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Total under $700, Refundable, Hotel rated 4.2+."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "2 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Prague - Old Town Rezidence as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "total_price",
+          "fieldLabel": "Total price",
+          "constraintLabel": "Total under $700",
+          "statedValue": 684,
+          "statedValueText": "$684",
+          "catalogValue": 684,
+          "catalogValueText": "$684",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "refundable",
+          "fieldLabel": "Refundable",
+          "constraintLabel": "Refundable",
+          "statedValue": true,
+          "statedValueText": "Yes",
+          "catalogValue": true,
+          "catalogValueText": "Yes",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c3",
+          "field": "hotel_rating",
+          "fieldLabel": "Hotel rating",
+          "constraintLabel": "Hotel rated 4.2+",
+          "statedValue": 4.5,
+          "statedValueText": "4.5/5",
+          "catalogValue": 4.5,
+          "catalogValueText": "4.5/5",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S06",
+      "slot": 6,
+      "domain": "laptop",
+      "prompt": "Find a laptop with 16 GB or more RAM, at least 10 hours of battery, and a price under $900.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "ram_gb",
+          "op": "gte",
+          "value": 16,
+          "label": "16 GB+ RAM"
+        },
+        {
+          "id": "c2",
+          "field": "battery_hours",
+          "op": "gte",
+          "value": 10,
+          "label": "10+ hours battery"
+        },
+        {
+          "id": "c3",
+          "field": "price",
+          "op": "lt",
+          "value": 900,
+          "label": "Under $900"
+        }
+      ],
+      "candidateIds": [
+        "L15",
+        "L05",
+        "L11",
+        "L08",
+        "L10"
+      ],
+      "recommendedId": "L15",
+      "specCardFields": [
+        "price",
+        "ram_gb",
+        "storage_gb",
+        "weight_kg",
+        "battery_hours",
+        "rating"
+      ],
+      "isErrorTrial": false,
+      "errorType": null,
+      "violatedConstraintIds": [],
+      "compliantCandidateIds": [
+        "L15",
+        "L11"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: 16 GB+ RAM, 10+ hours battery, Under $900."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "2 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Nimbus Studio 14 as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "ram_gb",
+          "fieldLabel": "RAM",
+          "constraintLabel": "16 GB+ RAM",
+          "statedValue": 16,
+          "statedValueText": "16 GB",
+          "catalogValue": 16,
+          "catalogValueText": "16 GB",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "battery_hours",
+          "fieldLabel": "Battery life",
+          "constraintLabel": "10+ hours battery",
+          "statedValue": 12.0,
+          "statedValueText": "12 h",
+          "catalogValue": 12.0,
+          "catalogValueText": "12 h",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c3",
+          "field": "price",
+          "fieldLabel": "Price",
+          "constraintLabel": "Under $900",
+          "statedValue": 889,
+          "statedValueText": "$889",
+          "catalogValue": 889,
+          "catalogValueText": "$889",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S07",
+      "slot": 7,
+      "domain": "trip",
+      "prompt": "Find a trip package with a total price under $850 where the hotel is rated 4.5 or higher.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "total_price",
+          "op": "lt",
+          "value": 850,
+          "label": "Total under $850"
+        },
+        {
+          "id": "c2",
+          "field": "hotel_rating",
+          "op": "gte",
+          "value": 4.5,
+          "label": "Hotel rated 4.5+"
+        }
+      ],
+      "candidateIds": [
+        "T08",
+        "T03",
+        "T09",
+        "T05",
+        "T12"
+      ],
+      "recommendedId": "T08",
+      "specCardFields": [
+        "total_price",
+        "flight_price",
+        "hotel_night",
+        "nights",
+        "hotel_rating",
+        "stops"
+      ],
+      "isErrorTrial": true,
+      "errorType": "arithmetic",
+      "violatedConstraintIds": [
+        "c1"
+      ],
+      "compliantCandidateIds": [
+        "T03",
+        "T09",
+        "T05",
+        "T12"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Total under $850, Hotel rated 4.5+."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "5 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Krakow - Rynek Grand as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "total_price",
+          "fieldLabel": "Total price",
+          "constraintLabel": "Total under $850",
+          "statedValue": 794,
+          "statedValueText": "$794",
+          "catalogValue": 914,
+          "catalogValueText": "$914",
+          "statedSatisfies": true,
+          "trulySatisfies": false,
+          "isFalseClaim": true
+        },
+        {
+          "constraintId": "c2",
+          "field": "hotel_rating",
+          "fieldLabel": "Hotel rating",
+          "constraintLabel": "Hotel rated 4.5+",
+          "statedValue": 4.7,
+          "statedValueText": "4.7/5",
+          "catalogValue": 4.7,
+          "catalogValueText": "4.7/5",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S08",
+      "slot": 8,
+      "domain": "laptop",
+      "prompt": "I need a laptop under $950 with at least 16 GB RAM and a screen of 14 inches or larger.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "price",
+          "op": "lt",
+          "value": 950,
+          "label": "Under $950"
+        },
+        {
+          "id": "c2",
+          "field": "ram_gb",
+          "op": "gte",
+          "value": 16,
+          "label": "16 GB+ RAM"
+        },
+        {
+          "id": "c3",
+          "field": "screen_in",
+          "op": "gte",
+          "value": 14.0,
+          "label": "14\" or larger screen"
+        }
+      ],
+      "candidateIds": [
+        "L09",
+        "L12",
+        "L17",
+        "L03",
+        "L10"
+      ],
+      "recommendedId": "L09",
+      "specCardFields": [
+        "price",
+        "ram_gb",
+        "storage_gb",
+        "weight_kg",
+        "battery_hours",
+        "rating"
+      ],
+      "isErrorTrial": false,
+      "errorType": null,
+      "violatedConstraintIds": [],
+      "compliantCandidateIds": [
+        "L09"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Under $950, 16 GB+ RAM, 14\" or larger screen."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "1 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Corvid Pro 14 as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "price",
+          "fieldLabel": "Price",
+          "constraintLabel": "Under $950",
+          "statedValue": 939,
+          "statedValueText": "$939",
+          "catalogValue": 939,
+          "catalogValueText": "$939",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "ram_gb",
+          "fieldLabel": "RAM",
+          "constraintLabel": "16 GB+ RAM",
+          "statedValue": 16,
+          "statedValueText": "16 GB",
+          "catalogValue": 16,
+          "catalogValueText": "16 GB",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c3",
+          "field": "screen_in",
+          "fieldLabel": "Screen",
+          "constraintLabel": "14\" or larger screen",
+          "statedValue": 14.0,
+          "statedValueText": "14\"",
+          "catalogValue": 14.0,
+          "catalogValueText": "14\"",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S09",
+      "slot": 9,
+      "domain": "laptop",
+      "prompt": "Find a laptop under $850 with at least 16 GB of RAM and 512 GB of storage.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "price",
+          "op": "lt",
+          "value": 850,
+          "label": "Under $850"
+        },
+        {
+          "id": "c2",
+          "field": "ram_gb",
+          "op": "gte",
+          "value": 16,
+          "label": "16 GB+ RAM"
+        },
+        {
+          "id": "c3",
+          "field": "storage_gb",
+          "op": "gte",
+          "value": 512,
+          "label": "512 GB+ storage"
+        }
+      ],
+      "candidateIds": [
+        "L12",
+        "L01",
+        "L18",
+        "L06",
+        "L14"
+      ],
+      "recommendedId": "L12",
+      "specCardFields": [
+        "price",
+        "ram_gb",
+        "storage_gb",
+        "weight_kg",
+        "battery_hours",
+        "rating"
+      ],
+      "isErrorTrial": true,
+      "errorType": "false_claim",
+      "violatedConstraintIds": [
+        "c2"
+      ],
+      "compliantCandidateIds": [
+        "L01",
+        "L18"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Under $850, 16 GB+ RAM, 512 GB+ storage."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "3 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Kestrel Slim 14 as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "price",
+          "fieldLabel": "Price",
+          "constraintLabel": "Under $850",
+          "statedValue": 819,
+          "statedValueText": "$819",
+          "catalogValue": 819,
+          "catalogValueText": "$819",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "ram_gb",
+          "fieldLabel": "RAM",
+          "constraintLabel": "16 GB+ RAM",
+          "statedValue": 16,
+          "statedValueText": "16 GB",
+          "catalogValue": 8,
+          "catalogValueText": "8 GB",
+          "statedSatisfies": true,
+          "trulySatisfies": false,
+          "isFalseClaim": true
+        },
+        {
+          "constraintId": "c3",
+          "field": "storage_gb",
+          "fieldLabel": "Storage",
+          "constraintLabel": "512 GB+ storage",
+          "statedValue": 512,
+          "statedValueText": "512 GB",
+          "catalogValue": 512,
+          "catalogValueText": "512 GB",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    },
+    {
+      "id": "S10",
+      "slot": 10,
+      "domain": "trip",
+      "prompt": "Find a trip under $750 total with a direct flight and a hotel rated 4.0 or better.",
+      "constraints": [
+        {
+          "id": "c1",
+          "field": "total_price",
+          "op": "lt",
+          "value": 750,
+          "label": "Total under $750"
+        },
+        {
+          "id": "c2",
+          "field": "stops",
+          "op": "eq",
+          "value": 0,
+          "label": "Direct flight"
+        },
+        {
+          "id": "c3",
+          "field": "hotel_rating",
+          "op": "gte",
+          "value": 4.0,
+          "label": "Hotel rated 4.0+"
+        }
+      ],
+      "candidateIds": [
+        "T04",
+        "T11",
+        "T02",
+        "T10",
+        "T07"
+      ],
+      "recommendedId": "T04",
+      "specCardFields": [
+        "total_price",
+        "flight_price",
+        "hotel_night",
+        "nights",
+        "hotel_rating",
+        "stops"
+      ],
+      "isErrorTrial": false,
+      "errorType": null,
+      "violatedConstraintIds": [],
+      "compliantCandidateIds": [
+        "T04",
+        "T11"
+      ],
+      "agentSteps": [
+        {
+          "n": 1,
+          "action": "Search",
+          "detail": "Retrieved 5 candidate options from the catalog."
+        },
+        {
+          "n": 2,
+          "action": "Filter",
+          "detail": "Applied your requirements: Total under $750, Direct flight, Hotel rated 4.0+."
+        },
+        {
+          "n": 3,
+          "action": "Compare",
+          "detail": "2 option(s) passed the filter; compared them on price and rating."
+        },
+        {
+          "n": 4,
+          "action": "Recommend",
+          "detail": "Selected Prague - Vinohrady Suites as the best overall match."
+        }
+      ],
+      "agentClaims": [
+        {
+          "constraintId": "c1",
+          "field": "total_price",
+          "fieldLabel": "Total price",
+          "constraintLabel": "Total under $750",
+          "statedValue": 620,
+          "statedValueText": "$620",
+          "catalogValue": 620,
+          "catalogValueText": "$620",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c2",
+          "field": "stops",
+          "fieldLabel": "Stops",
+          "constraintLabel": "Direct flight",
+          "statedValue": 0,
+          "statedValueText": "0",
+          "catalogValue": 0,
+          "catalogValueText": "0",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        },
+        {
+          "constraintId": "c3",
+          "field": "hotel_rating",
+          "fieldLabel": "Hotel rating",
+          "constraintLabel": "Hotel rated 4.0+",
+          "statedValue": 4.0,
+          "statedValueText": "4/5",
+          "catalogValue": 4.0,
+          "catalogValueText": "4/5",
+          "statedSatisfies": true,
+          "trulySatisfies": true,
+          "isFalseClaim": false
+        }
+      ],
+      "omittedConstraintIds": []
+    }
+  ]
+}

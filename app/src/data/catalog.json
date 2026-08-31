@@ -1,0 +1,454 @@
+{
+  "fieldMeta": {
+    "battery_hours": {
+      "kind": "number",
+      "label": "Battery life",
+      "unit": " h"
+    },
+    "flight_price": {
+      "kind": "currency",
+      "label": "Flight",
+      "unit": "$"
+    },
+    "hotel_night": {
+      "kind": "currency",
+      "label": "Hotel per night",
+      "unit": "$"
+    },
+    "hotel_rating": {
+      "kind": "number",
+      "label": "Hotel rating",
+      "unit": "/5"
+    },
+    "nights": {
+      "kind": "number",
+      "label": "Nights",
+      "unit": ""
+    },
+    "price": {
+      "kind": "currency",
+      "label": "Price",
+      "unit": "$"
+    },
+    "ram_gb": {
+      "kind": "number",
+      "label": "RAM",
+      "unit": " GB"
+    },
+    "rating": {
+      "kind": "number",
+      "label": "User rating",
+      "unit": "/5"
+    },
+    "refundable": {
+      "kind": "bool",
+      "label": "Refundable",
+      "unit": ""
+    },
+    "screen_in": {
+      "kind": "number",
+      "label": "Screen",
+      "unit": "\""
+    },
+    "stops": {
+      "kind": "number",
+      "label": "Stops",
+      "unit": ""
+    },
+    "storage_gb": {
+      "kind": "number",
+      "label": "Storage",
+      "unit": " GB"
+    },
+    "total_price": {
+      "kind": "currency",
+      "label": "Total price",
+      "unit": "$"
+    },
+    "weight_kg": {
+      "kind": "number",
+      "label": "Weight",
+      "unit": " kg"
+    }
+  },
+  "items": {
+    "L01": {
+      "battery_hours": 11.5,
+      "domain": "laptop",
+      "id": "L01",
+      "name": "Aeris Slim 14",
+      "price": 829,
+      "ram_gb": 16,
+      "rating": 4.4,
+      "screen_in": 14.0,
+      "storage_gb": 512,
+      "weight_kg": 1.29
+    },
+    "L02": {
+      "battery_hours": 9.0,
+      "domain": "laptop",
+      "id": "L02",
+      "name": "Nimbus Pro 15",
+      "price": 899,
+      "ram_gb": 8,
+      "rating": 4.2,
+      "screen_in": 15.6,
+      "storage_gb": 512,
+      "weight_kg": 1.62
+    },
+    "L03": {
+      "battery_hours": 12.0,
+      "domain": "laptop",
+      "id": "L03",
+      "name": "Corvid Air 13",
+      "price": 749,
+      "ram_gb": 16,
+      "rating": 4.3,
+      "screen_in": 13.3,
+      "storage_gb": 256,
+      "weight_kg": 1.18
+    },
+    "L04": {
+      "battery_hours": 10.5,
+      "domain": "laptop",
+      "id": "L04",
+      "name": "Valta Book 14",
+      "price": 869,
+      "ram_gb": 16,
+      "rating": 4.5,
+      "screen_in": 14.0,
+      "storage_gb": 512,
+      "weight_kg": 1.71
+    },
+    "L05": {
+      "battery_hours": 13.0,
+      "domain": "laptop",
+      "id": "L05",
+      "name": "Meridian X1",
+      "price": 999,
+      "ram_gb": 32,
+      "rating": 4.7,
+      "screen_in": 14.0,
+      "storage_gb": 1024,
+      "weight_kg": 1.35
+    },
+    "L06": {
+      "battery_hours": 8.5,
+      "domain": "laptop",
+      "id": "L06",
+      "name": "Nimbus Air 13",
+      "price": 679,
+      "ram_gb": 8,
+      "rating": 4.0,
+      "screen_in": 13.3,
+      "storage_gb": 256,
+      "weight_kg": 1.21
+    },
+    "L07": {
+      "battery_hours": 10.0,
+      "domain": "laptop",
+      "id": "L07",
+      "name": "Aeris Ultra 14",
+      "price": 879,
+      "ram_gb": 16,
+      "rating": 4.4,
+      "screen_in": 14.0,
+      "storage_gb": 512,
+      "weight_kg": 1.31
+    },
+    "L08": {
+      "battery_hours": 7.5,
+      "domain": "laptop",
+      "id": "L08",
+      "name": "Kestrel Work 15",
+      "price": 789,
+      "ram_gb": 16,
+      "rating": 4.1,
+      "screen_in": 15.6,
+      "storage_gb": 256,
+      "weight_kg": 1.88
+    },
+    "L09": {
+      "battery_hours": 12.5,
+      "domain": "laptop",
+      "id": "L09",
+      "name": "Corvid Pro 14",
+      "price": 939,
+      "ram_gb": 16,
+      "rating": 4.6,
+      "screen_in": 14.0,
+      "storage_gb": 512,
+      "weight_kg": 1.44
+    },
+    "L10": {
+      "battery_hours": 9.5,
+      "domain": "laptop",
+      "id": "L10",
+      "name": "Valta Lite 13",
+      "price": 699,
+      "ram_gb": 12,
+      "rating": 4.2,
+      "screen_in": 13.3,
+      "storage_gb": 256,
+      "weight_kg": 1.24
+    },
+    "L11": {
+      "battery_hours": 14.0,
+      "domain": "laptop",
+      "id": "L11",
+      "name": "Meridian Go 13",
+      "price": 859,
+      "ram_gb": 16,
+      "rating": 4.5,
+      "screen_in": 13.3,
+      "storage_gb": 512,
+      "weight_kg": 1.09
+    },
+    "L12": {
+      "battery_hours": 11.0,
+      "domain": "laptop",
+      "id": "L12",
+      "name": "Kestrel Slim 14",
+      "price": 819,
+      "ram_gb": 8,
+      "rating": 4.3,
+      "screen_in": 14.0,
+      "storage_gb": 512,
+      "weight_kg": 1.33
+    },
+    "L13": {
+      "battery_hours": 10.0,
+      "domain": "laptop",
+      "id": "L13",
+      "name": "Aeris Book 15",
+      "price": 949,
+      "ram_gb": 16,
+      "rating": 4.4,
+      "screen_in": 15.6,
+      "storage_gb": 1024,
+      "weight_kg": 1.79
+    },
+    "L14": {
+      "battery_hours": 9.0,
+      "domain": "laptop",
+      "id": "L14",
+      "name": "Corvid Lite 13",
+      "price": 729,
+      "ram_gb": 16,
+      "rating": 4.1,
+      "screen_in": 13.3,
+      "storage_gb": 256,
+      "weight_kg": 1.52
+    },
+    "L15": {
+      "battery_hours": 12.0,
+      "domain": "laptop",
+      "id": "L15",
+      "name": "Nimbus Studio 14",
+      "price": 889,
+      "ram_gb": 16,
+      "rating": 4.6,
+      "screen_in": 14.0,
+      "storage_gb": 512,
+      "weight_kg": 1.26
+    },
+    "L16": {
+      "battery_hours": 11.5,
+      "domain": "laptop",
+      "id": "L16",
+      "name": "Valta Pro 15",
+      "price": 969,
+      "ram_gb": 32,
+      "rating": 4.5,
+      "screen_in": 15.6,
+      "storage_gb": 512,
+      "weight_kg": 1.68
+    },
+    "L17": {
+      "battery_hours": 8.0,
+      "domain": "laptop",
+      "id": "L17",
+      "name": "Kestrel Air 13",
+      "price": 759,
+      "ram_gb": 16,
+      "rating": 4.0,
+      "screen_in": 13.3,
+      "storage_gb": 256,
+      "weight_kg": 1.15
+    },
+    "L18": {
+      "battery_hours": 13.5,
+      "domain": "laptop",
+      "id": "L18",
+      "name": "Meridian Book 14",
+      "price": 839,
+      "ram_gb": 16,
+      "rating": 4.4,
+      "screen_in": 14.0,
+      "storage_gb": 512,
+      "weight_kg": 1.47
+    },
+    "T01": {
+      "domain": "trip",
+      "flight_price": 312,
+      "hotel_night": 118,
+      "hotel_rating": 4.4,
+      "id": "T01",
+      "name": "Lisbon - Alfama Garden Hotel",
+      "nights": 4,
+      "refundable": true,
+      "stops": 0,
+      "total_price": 784
+    },
+    "T02": {
+      "domain": "trip",
+      "flight_price": 312,
+      "hotel_night": 96,
+      "hotel_rating": 4.1,
+      "id": "T02",
+      "name": "Lisbon - Baixa Central Inn",
+      "nights": 4,
+      "refundable": false,
+      "stops": 1,
+      "total_price": 696
+    },
+    "T03": {
+      "domain": "trip",
+      "flight_price": 268,
+      "hotel_night": 104,
+      "hotel_rating": 4.5,
+      "id": "T03",
+      "name": "Prague - Old Town Rezidence",
+      "nights": 4,
+      "refundable": true,
+      "stops": 1,
+      "total_price": 684
+    },
+    "T04": {
+      "domain": "trip",
+      "flight_price": 268,
+      "hotel_night": 88,
+      "hotel_rating": 4.0,
+      "id": "T04",
+      "name": "Prague - Vinohrady Suites",
+      "nights": 4,
+      "refundable": false,
+      "stops": 0,
+      "total_price": 620
+    },
+    "T05": {
+      "domain": "trip",
+      "flight_price": 341,
+      "hotel_night": 126,
+      "hotel_rating": 4.6,
+      "id": "T05",
+      "name": "Seville - Triana Riverside",
+      "nights": 3,
+      "refundable": true,
+      "stops": 0,
+      "total_price": 719
+    },
+    "T06": {
+      "domain": "trip",
+      "flight_price": 341,
+      "hotel_night": 99,
+      "hotel_rating": 4.2,
+      "id": "T06",
+      "name": "Seville - Macarena Boutique",
+      "nights": 3,
+      "refundable": true,
+      "stops": 1,
+      "total_price": 638
+    },
+    "T07": {
+      "domain": "trip",
+      "flight_price": 254,
+      "hotel_night": 79,
+      "hotel_rating": 4.3,
+      "id": "T07",
+      "name": "Krakow - Kazimierz House",
+      "nights": 5,
+      "refundable": false,
+      "stops": 1,
+      "total_price": 649
+    },
+    "T08": {
+      "domain": "trip",
+      "flight_price": 254,
+      "hotel_night": 132,
+      "hotel_rating": 4.7,
+      "id": "T08",
+      "name": "Krakow - Rynek Grand",
+      "nights": 5,
+      "refundable": true,
+      "stops": 0,
+      "total_price": 914
+    },
+    "T09": {
+      "domain": "trip",
+      "flight_price": 298,
+      "hotel_night": 111,
+      "hotel_rating": 4.5,
+      "id": "T09",
+      "name": "Porto - Ribeira Views",
+      "nights": 4,
+      "refundable": true,
+      "stops": 0,
+      "total_price": 742
+    },
+    "T10": {
+      "domain": "trip",
+      "flight_price": 298,
+      "hotel_night": 84,
+      "hotel_rating": 4.0,
+      "id": "T10",
+      "name": "Porto - Cedofeita Rooms",
+      "nights": 4,
+      "refundable": false,
+      "stops": 1,
+      "total_price": 634
+    },
+    "T11": {
+      "domain": "trip",
+      "flight_price": 325,
+      "hotel_night": 92,
+      "hotel_rating": 4.2,
+      "id": "T11",
+      "name": "Valencia - Ruzafa Loft",
+      "nights": 3,
+      "refundable": true,
+      "stops": 0,
+      "total_price": 601
+    },
+    "T12": {
+      "domain": "trip",
+      "flight_price": 325,
+      "hotel_night": 138,
+      "hotel_rating": 4.6,
+      "id": "T12",
+      "name": "Valencia - Marina Suites",
+      "nights": 3,
+      "refundable": true,
+      "stops": 0,
+      "total_price": 739
+    }
+  },
+  "specCardFields": {
+    "laptop": [
+      "price",
+      "ram_gb",
+      "storage_gb",
+      "weight_kg",
+      "battery_hours",
+      "rating"
+    ],
+    "trip": [
+      "total_price",
+      "flight_price",
+      "hotel_night",
+      "nights",
+      "hotel_rating",
+      "stops"
+    ]
+  }
+}
