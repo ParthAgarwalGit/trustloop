@@ -15,6 +15,20 @@ export const APP_VERSION = "0.1.0";
  */
 export const RANDOMISE_WITHIN_BLOCKS = true;
 
+/**
+ * Presentation pacing for the agent.
+ *
+ * TOOL_SPEED scales the scripted tool-call durations. 1.0 plays them at their
+ * authored length (~11 s per trial, which is realistic but tedious across 10
+ * trials); 0.55 keeps the sense of work being done at about 6 s. Do not set this
+ * so low that the activity log flickers past unread -- the point is that the
+ * participant SEES the agent consulting sources.
+ */
+export const TOOL_SPEED = 0.55;
+
+/** Characters per second for the streamed answer. Roughly a fast LLM. */
+export const STREAM_CHARS_PER_SEC = 900;
+
 /** Confidence rating scale (inclusive). */
 export const CONFIDENCE_MIN = 1;
 export const CONFIDENCE_MAX = 7;

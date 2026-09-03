@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build the app's stimulus JSON from `stimuli/spec/trials_spec.py`.
+Build the app's stimulus JSON from the spec modules.
 
 Ground truth is COMPUTED here, never copied from the spec. If the spec claims a
 trial is clean but the recommended item actually violates a constraint (or vice
@@ -9,8 +9,9 @@ versa), the build fails loudly rather than shipping a mislabelled trial.
 Usage:
     python stimuli/build_trials.py
 Outputs:
-    app/src/data/catalog.json
-    app/src/data/trials.json
+    app/src/data/catalog.json   the item catalogue
+    app/src/data/sources.json   the simulated web (retailer, review site, forum)
+    app/src/data/trials.json    trials + long-form agent responses + ground truth
 """
 from __future__ import annotations
 
@@ -21,6 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "stimuli" / "spec"))
 
+import response_spec  # noqa: E402
+import sources_spec as src  # noqa: E402
 import trials_spec as spec  # noqa: E402
 
 OUT_DIR = ROOT / "app" / "src" / "data"
@@ -34,10 +37,14 @@ OPS = {
     "neq": lambda a, b: a != b,
 }
 
-OP_TEXT = {
-    "lt": "under", "lte": "at most", "gt": "over",
-    "gte": "at least", "eq": "exactly", "neq": "not",
+# Fields the agent may mention as colour beyond the participant's stated
+# requirements. Real agents volunteer information you did not ask for, and that
+# noise is what stops the disputed figure standing out.
+NOISE_FIELDS = {
+    "laptop": ["screen_in", "rating", "storage_gb", "battery_hours"],
+    "trip": ["hotel_rating", "stops", "refundable", "nights"],
 }
+PRICE_FIELD = {"laptop": "price", "trip": "total_price"}
 
 
 class BuildError(Exception):
@@ -70,140 +77,25 @@ def violated_constraints(item: dict, constraints: list[dict]) -> list[str]:
     return [c["id"] for c in constraints if not satisfies(item, c)]
 
 
-def build_claims(trial: dict, item: dict) -> list[dict]:
-    """
-    One claim per constraint, describing what the agent ASSERTS about the item.
-
-    `catalogValue` is always the truth. `statedValue` is what the agent says.
-    They diverge only for a `false_claim` / `arithmetic` error. A
-    `dropped_constraint` error instead omits the claim entirely (`omitted` list).
-    """
-    err = trial.get("error_spec") or {}
-    etype = err.get("type")
-    claims = []
-
-    for con in trial["constraints"]:
-        field = con["field"]
-        truth = item[field]
-        stated = truth
-        is_false = False
-
-        if etype == "false_claim" and field == err["field"]:
-            stated = err["stated"]
-            is_false = True
-        elif etype == "arithmetic" and field == "total_price":
-            stated = err["stated_total"]
-            is_false = True
-
-        # Whether the agent's ASSERTION would satisfy the constraint (what a
-        # participant who trusts the agent's numbers would conclude)...
-        stated_satisfies = OPS[con["op"]](stated, con["value"])
-        # ...versus whether the item ACTUALLY satisfies it.
-        truly_satisfies = OPS[con["op"]](truth, con["value"])
-
-        claims.append({
-            "constraintId": con["id"],
-            "field": field,
-            "fieldLabel": spec.FIELD_META[field]["label"],
-            "constraintLabel": con["label"],
-            "statedValue": stated,
-            "statedValueText": fmt_value(field, stated),
-            "catalogValue": truth,
-            "catalogValueText": fmt_value(field, truth),
-            "statedSatisfies": stated_satisfies,
-            "trulySatisfies": truly_satisfies,
-            "isFalseClaim": is_false,
-        })
-
-    return claims
-
-
-def agent_view_pass_ids(trial: dict, shown_constraints: list[dict]) -> list[str]:
-    """
-    Which candidates pass the filter *as the agent believes it applied it*.
-
-    This is deliberately NOT the true compliant set. On an error trial the agent's
-    trace must be internally consistent with its own mistake, otherwise the
-    inconsistency (e.g. "3 options passed" followed by recommending a 4th) becomes
-    an unintended detection cue that differs between clean and error trials.
-
-    The agent's view differs from reality only for the recommended item, and only
-    on the falsified field.
-    """
-    err = trial.get("error_spec") or {}
-    etype = err.get("type")
-    rec_id = trial["recommend"]
-
-    passing = []
-    for cid in trial["candidates"]:
-        item = dict(spec.CATALOG[cid])
-        if cid == rec_id:
-            if etype == "false_claim":
-                item[err["field"]] = err["stated"]
-            elif etype == "arithmetic":
-                item["total_price"] = err["stated_total"]
-        if all(satisfies(item, con) for con in shown_constraints):
-            passing.append(cid)
-    return passing
-
-
-def build_steps(trial: dict, item: dict, pool_size: int) -> list[dict]:
-    """
-    The agent's process trace. Shown ONLY in the `full` disclosure condition.
-    Purely factual: tone is applied client-side (see app/src/lib/tone.ts) so that
-    the honest/sycophantic manipulation cannot leak ground truth.
-    """
-    err = trial.get("error_spec") or {}
-    shown = [c for c in trial["constraints"]]
-    if err.get("type") == "dropped_constraint":
-        dropped = set(violated_constraints(item, trial["constraints"]))
-        shown = [c for c in trial["constraints"] if c["id"] not in dropped]
-
-    n_pass = len(agent_view_pass_ids(trial, shown))
-    if trial["recommend"] not in agent_view_pass_ids(trial, shown):
-        raise BuildError(
-            f"trial {trial['id']}: the agent recommends {trial['recommend']} but that "
-            f"item does not pass even the agent's own (possibly erroneous) filter, so "
-            f"the process trace would be self-contradictory"
-        )
-
-    # Labels are used verbatim: lowercasing mangles acronyms ("512 GB+" -> "512 gb+").
-    filter_text = ", ".join(c["label"] for c in shown)
-    return [
-        {"n": 1, "action": "Search",
-         "detail": f"Retrieved {pool_size} candidate options from the catalog."},
-        {"n": 2, "action": "Filter",
-         "detail": f"Applied your requirements: {filter_text}."},
-        {"n": 3, "action": "Compare",
-         "detail": f"{n_pass} option(s) passed the filter; compared them on price and rating."},
-        {"n": 4, "action": "Recommend",
-         "detail": f"Selected {item['name']} as the best overall match."},
-    ]
-
-
 def build_trial(trial: dict) -> dict:
     item = spec.CATALOG[trial["recommend"]]
     constraints = trial["constraints"]
+    domain = trial["domain"]
+    err = trial.get("error_spec")
+    etype = err["type"] if err else None
 
     # --- ground truth, computed ------------------------------------------------
     violated = violated_constraints(item, constraints)
     is_error_actual = len(violated) > 0
 
-    err = trial.get("error_spec")
-    etype = err["type"] if err else None
-
-    # An arithmetic error can make a pick non-compliant on total_price; a false_claim
-    # likewise. Both are already captured by `violated`. Cross-check against the spec.
-    declared_error = err is not None
-    if declared_error != is_error_actual:
+    if (err is not None) != is_error_actual:
         raise BuildError(
             f"trial {trial['id']} (slot {trial['slot']}): spec declares "
             f"error_spec={etype!r} but the recommended item {item['id']} "
             f"{'violates' if is_error_actual else 'satisfies'} all constraints "
-            f"(violated={violated}). Fix the catalog, the constraints, or the pick."
+            f"(violated={violated}). Fix the catalogue, the constraints, or the pick."
         )
 
-    # --- candidate set ---------------------------------------------------------
     candidates = [spec.CATALOG[cid] for cid in trial["candidates"]]
     compliant = [ci["id"] for ci in candidates if not violated_constraints(ci, constraints)]
 
@@ -214,37 +106,155 @@ def build_trial(trial: dict) -> dict:
             f"trial {trial['id']}: no fully compliant option exists in the candidate "
             f"set, so 'override' can never be correct (violates invariant I4)"
         )
-    if declared_error and trial["recommend"] in compliant:
+    if err and trial["recommend"] in compliant:
         raise BuildError(f"trial {trial['id']}: error trial but the pick is compliant")
-    if not declared_error and trial["recommend"] not in compliant:
+    if not err and trial["recommend"] not in compliant:
         raise BuildError(f"trial {trial['id']}: clean trial but the pick is non-compliant")
 
-    claims = build_claims(trial, item)
-    steps = build_steps(trial, item, len(candidates))
-
-    omitted = []
+    # --- what the agent asserts -------------------------------------------------
+    dropped_fields: set[str] = set()
     if etype == "dropped_constraint":
-        omitted = violated
-        claims = [c for c in claims if c["constraintId"] not in omitted]
+        dropped_fields = {
+            c["field"] for c in constraints if c["id"] in violated
+        }
+
+    def stated_value_for(item_id: str, field: str):
+        """(value, is_false) -- what the agent asserts about this item's field."""
+        truth = spec.CATALOG[item_id][field]
+        if item_id != trial["recommend"] or not err:
+            return truth, False
+        if etype == "false_claim" and field == err["field"]:
+            return err["stated"], True
+        if etype == "arithmetic" and field == "total_price":
+            return err["stated_total"], True
+        return truth, False
+
+    def mentioned_fields_for(item_id: str) -> list[str]:
+        """
+        Which fields the agent talks about for this item.
+
+        Constraint fields come first (that is what the participant cares about),
+        then noise. A dropped constraint's field is absent entirely -- that absence
+        IS the error, and it has to be genuinely absent everywhere in the response.
+        """
+        price_field = PRICE_FIELD[domain]
+        fields = [price_field]
+        for c in constraints:
+            if c["field"] in dropped_fields:
+                continue
+            if c["field"] not in fields:
+                fields.append(c["field"])
+        for nf in NOISE_FIELDS[domain]:
+            if len(fields) >= 5:
+                break
+            if nf not in fields and nf not in dropped_fields and nf in spec.CATALOG[item_id]:
+                fields.append(nf)
+        return fields
+
+    cited_items = [trial["recommend"]] + [c for c in trial["candidates"] if c != trial["recommend"]]
+    tool_calls = response_spec.build_tool_calls(trial, spec.CATALOG, cited_items)
+    response = response_spec.build_response(
+        trial, spec.CATALOG, fmt_value, stated_value_for, mentioned_fields_for
+    )
+
+    # --- machine-readable record of every assertion -----------------------------
+    # Not rendered to participants. Analysis needs to know which fact was disputed
+    # and which page carries the truth, so it can ask whether a participant ever
+    # opened the page that would have exposed the error.
+    stated_facts = []
+    for field in mentioned_fields_for(trial["recommend"]):
+        value, is_false = stated_value_for(trial["recommend"], field)
+        truth = item[field]
+        constraint_id = next((c["id"] for c in constraints if c["field"] == field), None)
+        stated_facts.append({
+            "itemId": item["id"],
+            "field": field,
+            "statedValue": value,
+            "statedValueText": fmt_value(field, value),
+            "catalogValue": truth,
+            "catalogValueText": fmt_value(field, truth),
+            "isFalse": is_false,
+            "constraintId": constraint_id,
+            "sourceUrl": src.shop_url(item),
+        })
+
+    # The single fact that determines the trial's correctness, and where it lives.
+    disputed = None
+    if err:
+        if etype == "dropped_constraint":
+            vc = next(c for c in constraints if c["id"] in violated)
+            disputed = {
+                "kind": "omission",
+                "field": vc["field"],
+                "constraintId": vc["id"],
+                "catalogValue": item[vc["field"]],
+                "catalogValueText": fmt_value(vc["field"], item[vc["field"]]),
+                "sourceUrl": src.shop_url(item),
+            }
+        else:
+            field = err["field"] if etype == "false_claim" else "total_price"
+            value, _ = stated_value_for(trial["recommend"], field)
+            disputed = {
+                "kind": "contradiction",
+                "field": field,
+                "constraintId": next(
+                    (c["id"] for c in constraints if c["field"] == field), None
+                ),
+                "statedValue": value,
+                "statedValueText": fmt_value(field, value),
+                "catalogValue": item[field],
+                "catalogValueText": fmt_value(field, item[field]),
+                "sourceUrl": src.shop_url(item),
+            }
+
+    # --- self-consistency guard -------------------------------------------------
+    # Whatever the agent states must, on its own numbers, appear to satisfy every
+    # requirement it addresses. An agent that visibly contradicts itself would be
+    # caught for the wrong reason.
+    for fact in stated_facts:
+        if fact["constraintId"] is None:
+            continue
+        con = next(c for c in constraints if c["id"] == fact["constraintId"])
+        if not OPS[con["op"]](fact["statedValue"], con["value"]):
+            raise BuildError(
+                f"trial {trial['id']}: agent states {fact['field']}="
+                f"{fact['statedValueText']} which fails its own constraint "
+                f"{con['id']} ({con['label']}) -- self-contradictory response"
+            )
+
+    addressed = {f["constraintId"] for f in stated_facts if f["constraintId"]}
+    expected = {c["id"] for c in constraints}
+    if etype == "dropped_constraint":
+        if addressed != expected - set(violated):
+            raise BuildError(
+                f"trial {trial['id']}: dropped-constraint trial addresses {addressed}, "
+                f"expected {expected - set(violated)}"
+            )
+    elif addressed != expected:
+        raise BuildError(
+            f"trial {trial['id']}: response addresses {addressed} but the "
+            f"requirements are {expected}"
+        )
 
     return {
         "id": trial["id"],
         "slot": trial["slot"],
-        "domain": trial["domain"],
+        "domain": domain,
         "prompt": trial["prompt"],
         "constraints": constraints,
         "candidateIds": trial["candidates"],
         "recommendedId": trial["recommend"],
-        "specCardFields": spec.SPEC_CARD_FIELDS[trial["domain"]],
-        # --- ground truth (never shown to participants; used for scoring) ------
+        "specCardFields": spec.SPEC_CARD_FIELDS[domain],
+        # --- ground truth (never rendered; scoring only) ----------------------
         "isErrorTrial": is_error_actual,
         "errorType": etype,
         "violatedConstraintIds": violated,
         "compliantCandidateIds": compliant,
+        "statedFacts": stated_facts,
+        "disputedFact": disputed,
         # --- agent output ------------------------------------------------------
-        "agentSteps": steps,
-        "agentClaims": claims,
-        "omittedConstraintIds": omitted,
+        "toolCalls": tool_calls,
+        "response": response,
     }
 
 
@@ -271,28 +281,48 @@ def main() -> int:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    catalog_out = {
-        "fieldMeta": spec.FIELD_META,
-        "specCardFields": spec.SPEC_CARD_FIELDS,
-        "items": spec.CATALOG,
-    }
     (OUT_DIR / "catalog.json").write_text(
-        json.dumps(catalog_out, indent=2, sort_keys=True), encoding="utf-8"
+        json.dumps({
+            "fieldMeta": spec.FIELD_META,
+            "specCardFields": spec.SPEC_CARD_FIELDS,
+            "items": spec.CATALOG,
+        }, indent=2, sort_keys=True),
+        encoding="utf-8",
+    )
+    (OUT_DIR / "sources.json").write_text(
+        json.dumps({
+            "domains": {
+                "shop": src.SHOP_DOMAIN, "review": src.REVIEW_DOMAIN,
+                "forum": src.FORUM_DOMAIN,
+            },
+            "siteNames": {
+                "shop": src.SHOP_NAME, "review": src.REVIEW_NAME,
+                "forum": src.FORUM_NAME,
+            },
+            "pages": src.build_sources(spec.CATALOG),
+        }, indent=2),
+        encoding="utf-8",
     )
     (OUT_DIR / "trials.json").write_text(
         json.dumps({"errorSlots": spec.ERROR_SLOTS, "trials": trials}, indent=2),
         encoding="utf-8",
     )
 
+    total_words = sum(
+        len(b.get("text", "").split()) for t in trials for b in t["response"]["blocks"]
+    )
     print(f"Built {len(trials)} trials -> {OUT_DIR}")
-    print(f"  catalog items: {len(spec.CATALOG)}")
-    print(f"  error slots:   {actual_error_slots}")
+    print(f"  catalog items:    {len(spec.CATALOG)}")
+    print(f"  source pages:     {len(spec.CATALOG) * 3}")
+    print(f"  error slots:      {actual_error_slots}")
+    print(f"  mean response:    {total_words // len(trials)} words")
     for t in trials:
         flag = f"ERROR[{t['errorType']}]" if t["isErrorTrial"] else "clean"
+        words = sum(len(b.get("text", "").split()) for b in t["response"]["blocks"])
         print(
             f"  slot {t['slot']:>2}  {t['id']}  {t['domain']:<6} "
             f"rec={t['recommendedId']:<4} {flag:<26} "
-            f"compliant={t['compliantCandidateIds']}"
+            f"{words:>3}w  {len(t['response']['citations'])} cites"
         )
     return 0
 

@@ -1,0 +1,3254 @@
+{
+  "domains": {
+    "shop": "vantage.shop",
+    "review": "techbench.review",
+    "forum": "gearloop.forum"
+  },
+  "siteNames": {
+    "shop": "Vantage",
+    "review": "TechBench",
+    "forum": "GearLoop"
+  },
+  "pages": {
+    "L01": {
+      "shop": {
+        "url": "vantage.shop/p/aeris-slim-14",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. The charger is bulkier than it needs to be.",
+            "verified": false
+          },
+          {
+            "handle": "tessellate",
+            "stars": 5,
+            "date": "12 March 2026",
+            "body": "Build quality is a clear step above what I expected at this price.",
+            "verified": true
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Hinge has a little wobble when you tap the screen.",
+            "verified": false
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "Battery has comfortably survived a full working day for me. The charger is bulkier than it needs to be.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/aeris-slim-14",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "R. Delacroix",
+        "date": "7 February 2026",
+        "score": 8.6,
+        "verdict": "The Aeris Slim 14 makes a strong case on value, provided its particular set of compromises happens to line up with your priorities.",
+        "body": "We spent two weeks with the Aeris Slim 14 as a primary work machine. At $829, it sits in the most crowded part of the market, which means the details decide it.\n\nThe display is bright enough to use next to a window, which was my main worry. Build quality is a clear step above what I expected at this price.\n\nIt is not without compromises. The charger is bulkier than it needs to be. It picks up fingerprints immediately if you get the darker finish.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "The display is bright enough to use next to a window, which was my main worry.",
+          "Trackpad is large and the palm rejection actually works."
+        ],
+        "cons": [
+          "Hinge has a little wobble when you tap the screen.",
+          "Hinge has a little wobble when you tap the screen."
+        ],
+        "prosNoun": [
+          "display brightness",
+          "the trackpad"
+        ],
+        "consNoun": [
+          "a slightly loose hinge",
+          "a slightly loose hinge"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/aeris-slim-14-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Aeris Slim 14 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "sunkcost",
+            "date": "18 January 2026",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "oakfield",
+            "date": "22 December 2025",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "3 April 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "7 February 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "thirdcoast",
+            "date": "9 May 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L02": {
+      "shop": {
+        "url": "vantage.shop/p/nimbus-pro-15",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "The display is bright enough to use next to a window, which was my main worry. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          },
+          {
+            "handle": "brackish",
+            "stars": 5,
+            "date": "3 April 2026",
+            "body": "Build quality is a clear step above what I expected at this price.",
+            "verified": true
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. The charger is bulkier than it needs to be.",
+            "verified": true
+          },
+          {
+            "handle": "hollowpoint",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Build quality is a clear step above what I expected at this price. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "hollowpoint",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/nimbus-pro-15",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "T. Nakamura",
+        "date": "27 February 2026",
+        "score": 8.3,
+        "verdict": "The Nimbus Pro 15 makes a strong case on value, provided its particular set of compromises happens to line up with your priorities.",
+        "body": "We spent two weeks with the Nimbus Pro 15 as a primary work machine. At $899, it sits in the most crowded part of the market, which means the details decide it.\n\nThe keyboard is genuinely excellent \u2014 long travel, no flex in the deck. Battery has comfortably survived a full working day for me.\n\nIt is not without compromises. Speakers are thin \u2014 you'll want headphones for anything but calls. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Boots fast and has stayed fast after four months of daily use.",
+          "Build quality is a clear step above what I expected at this price."
+        ],
+        "cons": [
+          "The charger is bulkier than it needs to be.",
+          "Coil whine on mine, though support says it's not typical."
+        ],
+        "prosNoun": [
+          "how well it has held up over time",
+          "the build quality"
+        ],
+        "consNoun": [
+          "an unnecessarily bulky charger",
+          "occasional coil whine"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/nimbus-pro-15-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Nimbus Pro 15 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "grumbleweed",
+            "date": "7 February 2026",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "aviva.r",
+            "date": "27 February 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "date": "19 March 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "7 February 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "3 April 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L03": {
+      "shop": {
+        "url": "vantage.shop/p/corvid-air-13",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Coil whine on mine, though support says it's not typical.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 5,
+            "date": "12 March 2026",
+            "body": "Build quality is a clear step above what I expected at this price.",
+            "verified": true
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Coil whine on mine, though support says it's not typical.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "14 June 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry. The charger is bulkier than it needs to be.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/corvid-air-13",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "A. Ferreira",
+        "date": "7 February 2026",
+        "score": 8.7,
+        "verdict": "There is nothing exotic about the Corvid Air 13, and that is largely the point. It is a competent machine at a competitive price.",
+        "body": "We spent two weeks with the Corvid Air 13 as a primary work machine. At $749, it sits in the most crowded part of the market, which means the details decide it.\n\nThe keyboard is genuinely excellent \u2014 long travel, no flex in the deck. Trackpad is large and the palm rejection actually works.\n\nIt is not without compromises. The charger is bulkier than it needs to be. Coil whine on mine, though support says it's not typical.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Runs completely silent under normal office load. Fans only spin up when compiling.",
+          "Trackpad is large and the palm rejection actually works."
+        ],
+        "cons": [
+          "The webcam is mediocre. Fine for calls, not much else.",
+          "Only two USB-C ports, so I'm living with a dongle."
+        ],
+        "prosNoun": [
+          "how quietly it runs",
+          "the trackpad"
+        ],
+        "consNoun": [
+          "a mediocre webcam",
+          "a thin port selection"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/corvid-air-13-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Corvid Air 13 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "thirdcoast",
+            "date": "14 June 2026",
+            "body": "Cross-shopping this against a couple of others. What am I missing?",
+            "op": true
+          },
+          {
+            "handle": "clatter",
+            "date": "9 May 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "tessellate",
+            "date": "9 May 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "penny_dreadful",
+            "date": "3 April 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "19 March 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L04": {
+      "shop": {
+        "url": "vantage.shop/p/valta-book-14",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "hollowpoint",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Trackpad is large and the palm rejection actually works.",
+            "verified": true
+          },
+          {
+            "handle": "hollowpoint",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Trackpad is large and the palm rejection actually works. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry. Coil whine on mine, though support says it's not typical.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/valta-book-14",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "J. Whitfield",
+        "date": "7 February 2026",
+        "score": 8.8,
+        "verdict": "The Valta Book 14 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Valta Book 14 as a primary work machine. At $869, it sits in the most crowded part of the market, which means the details decide it.\n\nBuild quality is a clear step above what I expected at this price. Battery has comfortably survived a full working day for me.\n\nIt is not without compromises. Only two USB-C ports, so I'm living with a dongle. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck.",
+          "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck."
+        ],
+        "cons": [
+          "The webcam is mediocre. Fine for calls, not much else.",
+          "Coil whine on mine, though support says it's not typical."
+        ],
+        "prosNoun": [
+          "the keyboard",
+          "the keyboard"
+        ],
+        "consNoun": [
+          "a mediocre webcam",
+          "occasional coil whine"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/valta-book-14-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Valta Book 14 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "grumbleweed",
+            "date": "18 January 2026",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "12 March 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "19 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "3 April 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "thirdcoast",
+            "date": "12 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L05": {
+      "shop": {
+        "url": "vantage.shop/p/meridian-x1",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "tessellate",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Battery has comfortably survived a full working day for me.",
+            "verified": false
+          },
+          {
+            "handle": "oakfield",
+            "stars": 5,
+            "date": "30 April 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry.",
+            "verified": false
+          },
+          {
+            "handle": "grumbleweed",
+            "stars": 5,
+            "date": "9 May 2026",
+            "body": "Battery has comfortably survived a full working day for me.",
+            "verified": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. Only two USB-C ports, so I'm living with a dongle.",
+            "verified": true
+          },
+          {
+            "handle": "quietkeyboard",
+            "stars": 5,
+            "date": "12 March 2026",
+            "body": "Battery has comfortably survived a full working day for me.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/meridian-x1",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "J. Whitfield",
+        "date": "19 March 2026",
+        "score": 9.6,
+        "verdict": "The Meridian X1 makes a strong case on value, provided its particular set of compromises happens to line up with your priorities.",
+        "body": "We spent two weeks with the Meridian X1 as a primary work machine. At $999, it sits in the most crowded part of the market, which means the details decide it.\n\nBattery has comfortably survived a full working day for me. Battery has comfortably survived a full working day for me.\n\nIt is not without compromises. The charger is bulkier than it needs to be. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Runs completely silent under normal office load. Fans only spin up when compiling.",
+          "Runs completely silent under normal office load. Fans only spin up when compiling."
+        ],
+        "cons": [
+          "The charger is bulkier than it needs to be.",
+          "Only two USB-C ports, so I'm living with a dongle."
+        ],
+        "prosNoun": [
+          "how quietly it runs",
+          "how quietly it runs"
+        ],
+        "consNoun": [
+          "an unnecessarily bulky charger",
+          "a thin port selection"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/meridian-x1-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Meridian X1 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "grumbleweed",
+            "date": "3 April 2026",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "oakfield",
+            "date": "18 January 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "tessellate",
+            "date": "22 December 2025",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "3 April 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "27 February 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L06": {
+      "shop": {
+        "url": "vantage.shop/p/nimbus-air-13",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "The display is bright enough to use next to a window, which was my main worry. Only two USB-C ports, so I'm living with a dongle.",
+            "verified": true
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Battery has comfortably survived a full working day for me. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": false
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Coil whine on mine, though support says it's not typical.",
+            "verified": true
+          },
+          {
+            "handle": "brackish",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          },
+          {
+            "handle": "thirdcoast",
+            "stars": 4,
+            "date": "14 June 2026",
+            "body": "Build quality is a clear step above what I expected at this price. Only two USB-C ports, so I'm living with a dongle.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/nimbus-air-13",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "L. Hammersley",
+        "date": "18 January 2026",
+        "score": 7.9,
+        "verdict": "The Nimbus Air 13 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Nimbus Air 13 as a primary work machine. At $679, it sits in the most crowded part of the market, which means the details decide it.\n\nBattery has comfortably survived a full working day for me. Runs completely silent under normal office load. Fans only spin up when compiling.\n\nIt is not without compromises. Coil whine on mine, though support says it's not typical. Speakers are thin \u2014 you'll want headphones for anything but calls.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Trackpad is large and the palm rejection actually works.",
+          "Runs completely silent under normal office load. Fans only spin up when compiling."
+        ],
+        "cons": [
+          "Only two USB-C ports, so I'm living with a dongle.",
+          "It picks up fingerprints immediately if you get the darker finish."
+        ],
+        "prosNoun": [
+          "the trackpad",
+          "how quietly it runs"
+        ],
+        "consNoun": [
+          "a thin port selection",
+          "a finish that shows fingerprints"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/nimbus-air-13-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Nimbus Air 13 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "mildlyannoyed",
+            "date": "12 March 2026",
+            "body": "Cross-shopping this against a couple of others. What am I missing?",
+            "op": true
+          },
+          {
+            "handle": "mreid_88",
+            "date": "18 January 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "date": "3 April 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "penny_dreadful",
+            "date": "7 February 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "14 June 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L07": {
+      "shop": {
+        "url": "vantage.shop/p/aeris-ultra-14",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          },
+          {
+            "handle": "oakfield",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Build quality is a clear step above what I expected at this price.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "19 March 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "19 March 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Only two USB-C ports, so I'm living with a dongle.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Battery has comfortably survived a full working day for me. Coil whine on mine, though support says it's not typical.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/aeris-ultra-14",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "P. Silvestri",
+        "date": "27 February 2026",
+        "score": 8.8,
+        "verdict": "The Aeris Ultra 14 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Aeris Ultra 14 as a primary work machine. At $879, it sits in the most crowded part of the market, which means the details decide it.\n\nBuild quality is a clear step above what I expected at this price. The display is bright enough to use next to a window, which was my main worry.\n\nIt is not without compromises. Only two USB-C ports, so I'm living with a dongle. Only two USB-C ports, so I'm living with a dongle.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "The display is bright enough to use next to a window, which was my main worry.",
+          "Trackpad is large and the palm rejection actually works."
+        ],
+        "cons": [
+          "Hinge has a little wobble when you tap the screen.",
+          "Only two USB-C ports, so I'm living with a dongle."
+        ],
+        "prosNoun": [
+          "display brightness",
+          "the trackpad"
+        ],
+        "consNoun": [
+          "a slightly loose hinge",
+          "a thin port selection"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/aeris-ultra-14-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Aeris Ultra 14 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "quietkeyboard",
+            "date": "22 December 2025",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "oakfield",
+            "date": "12 March 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "14 June 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "19 March 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "aviva.r",
+            "date": "14 June 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L08": {
+      "shop": {
+        "url": "vantage.shop/p/kestrel-work-15",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "wentworth_j",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Battery has comfortably survived a full working day for me. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 5,
+            "date": "19 March 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling.",
+            "verified": true
+          },
+          {
+            "handle": "penny_dreadful",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Trackpad is large and the palm rejection actually works. It picks up fingerprints immediately if you get the darker finish.",
+            "verified": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Trackpad is large and the palm rejection actually works. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. The charger is bulkier than it needs to be.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/kestrel-work-15",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "T. Nakamura",
+        "date": "27 February 2026",
+        "score": 8.2,
+        "verdict": "There is nothing exotic about the Kestrel Work 15, and that is largely the point. It is a competent machine at a competitive price.",
+        "body": "We spent two weeks with the Kestrel Work 15 as a primary work machine. At $789, it sits in the most crowded part of the market, which means the details decide it.\n\nBoots fast and has stayed fast after four months of daily use. Trackpad is large and the palm rejection actually works.\n\nIt is not without compromises. It picks up fingerprints immediately if you get the darker finish. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Build quality is a clear step above what I expected at this price.",
+          "Boots fast and has stayed fast after four months of daily use."
+        ],
+        "cons": [
+          "Hinge has a little wobble when you tap the screen.",
+          "It picks up fingerprints immediately if you get the darker finish."
+        ],
+        "prosNoun": [
+          "the build quality",
+          "how well it has held up over time"
+        ],
+        "consNoun": [
+          "a slightly loose hinge",
+          "a finish that shows fingerprints"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/kestrel-work-15-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Kestrel Work 15 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "penny_dreadful",
+            "date": "3 April 2026",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "14 June 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "thirdcoast",
+            "date": "12 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "wentworth_j",
+            "date": "12 March 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "brackish",
+            "date": "12 March 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L09": {
+      "shop": {
+        "url": "vantage.shop/p/corvid-pro-14",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "hollowpoint",
+            "stars": 5,
+            "date": "19 March 2026",
+            "body": "Trackpad is large and the palm rejection actually works.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 5,
+            "date": "18 January 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry.",
+            "verified": true
+          },
+          {
+            "handle": "grumbleweed",
+            "stars": 5,
+            "date": "3 April 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry.",
+            "verified": true
+          },
+          {
+            "handle": "hollowpoint",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "sunkcost",
+            "stars": 5,
+            "date": "18 January 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/corvid-pro-14",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "P. Silvestri",
+        "date": "9 May 2026",
+        "score": 9.4,
+        "verdict": "The Corvid Pro 14 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Corvid Pro 14 as a primary work machine. At $939, it sits in the most crowded part of the market, which means the details decide it.\n\nThe display is bright enough to use next to a window, which was my main worry. Runs completely silent under normal office load. Fans only spin up when compiling.\n\nIt is not without compromises. The webcam is mediocre. Fine for calls, not much else. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Runs completely silent under normal office load. Fans only spin up when compiling.",
+          "The display is bright enough to use next to a window, which was my main worry."
+        ],
+        "cons": [
+          "Speakers are thin \u2014 you'll want headphones for anything but calls.",
+          "It picks up fingerprints immediately if you get the darker finish."
+        ],
+        "prosNoun": [
+          "how quietly it runs",
+          "display brightness"
+        ],
+        "consNoun": [
+          "weak speakers",
+          "a finish that shows fingerprints"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/corvid-pro-14-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Corvid Pro 14 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "grumbleweed",
+            "date": "12 March 2026",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "tessellate",
+            "date": "12 March 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "hollowpoint",
+            "date": "22 December 2025",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "tessellate",
+            "date": "18 January 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "wentworth_j",
+            "date": "14 June 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L10": {
+      "shop": {
+        "url": "vantage.shop/p/valta-lite-13",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "sunkcost",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "Build quality is a clear step above what I expected at this price. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 5,
+            "date": "19 March 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck.",
+            "verified": true
+          },
+          {
+            "handle": "sunkcost",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "Boots fast and has stayed fast after four months of daily use. Coil whine on mine, though support says it's not typical.",
+            "verified": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Build quality is a clear step above what I expected at this price. It picks up fingerprints immediately if you get the darker finish.",
+            "verified": true
+          },
+          {
+            "handle": "oakfield",
+            "stars": 4,
+            "date": "19 March 2026",
+            "body": "Trackpad is large and the palm rejection actually works. It picks up fingerprints immediately if you get the darker finish.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/valta-lite-13",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "T. Nakamura",
+        "date": "9 May 2026",
+        "score": 8.3,
+        "verdict": "The Valta Lite 13 makes a strong case on value, provided its particular set of compromises happens to line up with your priorities.",
+        "body": "We spent two weeks with the Valta Lite 13 as a primary work machine. At $699, it sits in the most crowded part of the market, which means the details decide it.\n\nRuns completely silent under normal office load. Fans only spin up when compiling. Battery has comfortably survived a full working day for me.\n\nIt is not without compromises. Hinge has a little wobble when you tap the screen. The charger is bulkier than it needs to be.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Trackpad is large and the palm rejection actually works.",
+          "Build quality is a clear step above what I expected at this price."
+        ],
+        "cons": [
+          "It picks up fingerprints immediately if you get the darker finish.",
+          "Coil whine on mine, though support says it's not typical."
+        ],
+        "prosNoun": [
+          "the trackpad",
+          "the build quality"
+        ],
+        "consNoun": [
+          "a finish that shows fingerprints",
+          "occasional coil whine"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/valta-lite-13-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Valta Lite 13 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "quietkeyboard",
+            "date": "7 February 2026",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "9 May 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "hollowpoint",
+            "date": "12 March 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "tessellate",
+            "date": "22 December 2025",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "brackish",
+            "date": "19 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L11": {
+      "shop": {
+        "url": "vantage.shop/p/meridian-go-13",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "thirdcoast",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "Build quality is a clear step above what I expected at this price. Coil whine on mine, though support says it's not typical.",
+            "verified": false
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 5,
+            "date": "18 January 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry.",
+            "verified": false
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          },
+          {
+            "handle": "grumbleweed",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/meridian-go-13",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "C. Iwuchukwu",
+        "date": "27 February 2026",
+        "score": 9.2,
+        "verdict": "There is nothing exotic about the Meridian Go 13, and that is largely the point. It is a competent machine at a competitive price.",
+        "body": "We spent two weeks with the Meridian Go 13 as a primary work machine. At $859, it sits in the most crowded part of the market, which means the details decide it.\n\nThe display is bright enough to use next to a window, which was my main worry. Runs completely silent under normal office load. Fans only spin up when compiling.\n\nIt is not without compromises. Speakers are thin \u2014 you'll want headphones for anything but calls. Speakers are thin \u2014 you'll want headphones for anything but calls.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "The display is bright enough to use next to a window, which was my main worry.",
+          "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck."
+        ],
+        "cons": [
+          "The charger is bulkier than it needs to be.",
+          "Only two USB-C ports, so I'm living with a dongle."
+        ],
+        "prosNoun": [
+          "display brightness",
+          "the keyboard"
+        ],
+        "consNoun": [
+          "an unnecessarily bulky charger",
+          "a thin port selection"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/meridian-go-13-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Meridian Go 13 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "hollowpoint",
+            "date": "12 March 2026",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "18 January 2026",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          },
+          {
+            "handle": "wentworth_j",
+            "date": "18 January 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "hollowpoint",
+            "date": "22 December 2025",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "7 February 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L12": {
+      "shop": {
+        "url": "vantage.shop/p/kestrel-slim-14",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Trackpad is large and the palm rejection actually works. The charger is bulkier than it needs to be.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 5,
+            "date": "14 June 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use.",
+            "verified": true
+          },
+          {
+            "handle": "grumbleweed",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/kestrel-slim-14",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "P. Silvestri",
+        "date": "27 February 2026",
+        "score": 8.5,
+        "verdict": "The Kestrel Slim 14 makes a strong case on value, provided its particular set of compromises happens to line up with your priorities.",
+        "body": "We spent two weeks with the Kestrel Slim 14 as a primary work machine. At $819, it sits in the most crowded part of the market, which means the details decide it.\n\nBoots fast and has stayed fast after four months of daily use. Battery has comfortably survived a full working day for me.\n\nIt is not without compromises. The charger is bulkier than it needs to be. Only two USB-C ports, so I'm living with a dongle.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Build quality is a clear step above what I expected at this price.",
+          "Runs completely silent under normal office load. Fans only spin up when compiling."
+        ],
+        "cons": [
+          "Coil whine on mine, though support says it's not typical.",
+          "Speakers are thin \u2014 you'll want headphones for anything but calls."
+        ],
+        "prosNoun": [
+          "the build quality",
+          "how quietly it runs"
+        ],
+        "consNoun": [
+          "occasional coil whine",
+          "weak speakers"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/kestrel-slim-14-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Kestrel Slim 14 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "hollowpoint",
+            "date": "9 May 2026",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "wentworth_j",
+            "date": "27 February 2026",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "date": "3 April 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "tessellate",
+            "date": "3 April 2026",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "18 January 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L13": {
+      "shop": {
+        "url": "vantage.shop/p/aeris-book-15",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 5,
+            "date": "14 June 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use.",
+            "verified": true
+          },
+          {
+            "handle": "grumbleweed",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": false
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Trackpad is large and the palm rejection actually works. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "Boots fast and has stayed fast after four months of daily use. The charger is bulkier than it needs to be.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/aeris-book-15",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "S. Baraniuk",
+        "date": "12 March 2026",
+        "score": 8.6,
+        "verdict": "The Aeris Book 15 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Aeris Book 15 as a primary work machine. At $949, it sits in the most crowded part of the market, which means the details decide it.\n\nRuns completely silent under normal office load. Fans only spin up when compiling. The display is bright enough to use next to a window, which was my main worry.\n\nIt is not without compromises. Coil whine on mine, though support says it's not typical. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Build quality is a clear step above what I expected at this price.",
+          "Battery has comfortably survived a full working day for me."
+        ],
+        "cons": [
+          "Coil whine on mine, though support says it's not typical.",
+          "The webcam is mediocre. Fine for calls, not much else."
+        ],
+        "prosNoun": [
+          "the build quality",
+          "real-world battery life"
+        ],
+        "consNoun": [
+          "occasional coil whine",
+          "a mediocre webcam"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/aeris-book-15-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Aeris Book 15 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "hollowpoint",
+            "date": "19 March 2026",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "wentworth_j",
+            "date": "30 April 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "date": "22 December 2025",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "aviva.r",
+            "date": "9 May 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "30 April 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L14": {
+      "shop": {
+        "url": "vantage.shop/p/corvid-lite-13",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 5,
+            "date": "22 December 2025",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling.",
+            "verified": true
+          },
+          {
+            "handle": "hollowpoint",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Build quality is a clear step above what I expected at this price. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": false
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "14 June 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry. The charger is bulkier than it needs to be.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/corvid-lite-13",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "N. Bergstrom",
+        "date": "14 June 2026",
+        "score": 8.0,
+        "verdict": "The Corvid Lite 13 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Corvid Lite 13 as a primary work machine. At $729, it sits in the most crowded part of the market, which means the details decide it.\n\nThe display is bright enough to use next to a window, which was my main worry. Trackpad is large and the palm rejection actually works.\n\nIt is not without compromises. Hinge has a little wobble when you tap the screen. The charger is bulkier than it needs to be.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Runs completely silent under normal office load. Fans only spin up when compiling.",
+          "Trackpad is large and the palm rejection actually works."
+        ],
+        "cons": [
+          "The charger is bulkier than it needs to be.",
+          "Only two USB-C ports, so I'm living with a dongle."
+        ],
+        "prosNoun": [
+          "how quietly it runs",
+          "the trackpad"
+        ],
+        "consNoun": [
+          "an unnecessarily bulky charger",
+          "a thin port selection"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/corvid-lite-13-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Corvid Lite 13 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "grumbleweed",
+            "date": "22 December 2025",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "not_a_reviewer",
+            "date": "14 June 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "date": "12 March 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "penny_dreadful",
+            "date": "14 June 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "9 May 2026",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L15": {
+      "shop": {
+        "url": "vantage.shop/p/nimbus-studio-14",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "not_a_reviewer",
+            "stars": 5,
+            "date": "30 April 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck.",
+            "verified": true
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 5,
+            "date": "18 January 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 5,
+            "date": "22 December 2025",
+            "body": "Battery has comfortably survived a full working day for me.",
+            "verified": true
+          },
+          {
+            "handle": "oakfield",
+            "stars": 4,
+            "date": "19 March 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. It picks up fingerprints immediately if you get the darker finish.",
+            "verified": false
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 5,
+            "date": "3 April 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/nimbus-studio-14",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "S. Baraniuk",
+        "date": "19 March 2026",
+        "score": 9.4,
+        "verdict": "There is nothing exotic about the Nimbus Studio 14, and that is largely the point. It is a competent machine at a competitive price.",
+        "body": "We spent two weeks with the Nimbus Studio 14 as a primary work machine. At $889, it sits in the most crowded part of the market, which means the details decide it.\n\nThe display is bright enough to use next to a window, which was my main worry. The display is bright enough to use next to a window, which was my main worry.\n\nIt is not without compromises. Only two USB-C ports, so I'm living with a dongle. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Trackpad is large and the palm rejection actually works.",
+          "Trackpad is large and the palm rejection actually works."
+        ],
+        "cons": [
+          "Coil whine on mine, though support says it's not typical.",
+          "It picks up fingerprints immediately if you get the darker finish."
+        ],
+        "prosNoun": [
+          "the trackpad",
+          "the trackpad"
+        ],
+        "consNoun": [
+          "occasional coil whine",
+          "a finish that shows fingerprints"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/nimbus-studio-14-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Nimbus Studio 14 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "grumbleweed",
+            "date": "3 April 2026",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "27 February 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "19 March 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "7 February 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "19 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L16": {
+      "shop": {
+        "url": "vantage.shop/p/valta-pro-15",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "penny_dreadful",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Battery has comfortably survived a full working day for me. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 5,
+            "date": "12 March 2026",
+            "body": "Battery has comfortably survived a full working day for me.",
+            "verified": true
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "The display is bright enough to use next to a window, which was my main worry. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          },
+          {
+            "handle": "penny_dreadful",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Runs completely silent under normal office load. Fans only spin up when compiling. Coil whine on mine, though support says it's not typical.",
+            "verified": true
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/valta-pro-15",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "M. Okonkwo",
+        "date": "12 March 2026",
+        "score": 9.0,
+        "verdict": "There is nothing exotic about the Valta Pro 15, and that is largely the point. It is a competent machine at a competitive price.",
+        "body": "We spent two weeks with the Valta Pro 15 as a primary work machine. At $969, it sits in the most crowded part of the market, which means the details decide it.\n\nBoots fast and has stayed fast after four months of daily use. Battery has comfortably survived a full working day for me.\n\nIt is not without compromises. Hinge has a little wobble when you tap the screen. The webcam is mediocre. Fine for calls, not much else.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Trackpad is large and the palm rejection actually works.",
+          "Runs completely silent under normal office load. Fans only spin up when compiling."
+        ],
+        "cons": [
+          "It picks up fingerprints immediately if you get the darker finish.",
+          "Coil whine on mine, though support says it's not typical."
+        ],
+        "prosNoun": [
+          "the trackpad",
+          "how quietly it runs"
+        ],
+        "consNoun": [
+          "a finish that shows fingerprints",
+          "occasional coil whine"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/valta-pro-15-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Valta Pro 15 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "not_a_reviewer",
+            "date": "12 March 2026",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "tessellate",
+            "date": "27 February 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "3 April 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "thirdcoast",
+            "date": "14 June 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "date": "18 January 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L17": {
+      "shop": {
+        "url": "vantage.shop/p/kestrel-air-13",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "oakfield",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          },
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. It picks up fingerprints immediately if you get the darker finish.",
+            "verified": false
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Boots fast and has stayed fast after four months of daily use. Hinge has a little wobble when you tap the screen.",
+            "verified": true
+          },
+          {
+            "handle": "brackish",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Battery has comfortably survived a full working day for me. Only two USB-C ports, so I'm living with a dongle.",
+            "verified": true
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Build quality is a clear step above what I expected at this price. Coil whine on mine, though support says it's not typical.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/kestrel-air-13",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "P. Silvestri",
+        "date": "27 February 2026",
+        "score": 7.9,
+        "verdict": "The Kestrel Air 13 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Kestrel Air 13 as a primary work machine. At $759, it sits in the most crowded part of the market, which means the details decide it.\n\nRuns completely silent under normal office load. Fans only spin up when compiling. Boots fast and has stayed fast after four months of daily use.\n\nIt is not without compromises. The webcam is mediocre. Fine for calls, not much else. The charger is bulkier than it needs to be.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck.",
+          "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck."
+        ],
+        "cons": [
+          "Only two USB-C ports, so I'm living with a dongle.",
+          "It picks up fingerprints immediately if you get the darker finish."
+        ],
+        "prosNoun": [
+          "the keyboard",
+          "the keyboard"
+        ],
+        "consNoun": [
+          "a thin port selection",
+          "a finish that shows fingerprints"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/kestrel-air-13-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Kestrel Air 13 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "not_a_reviewer",
+            "date": "27 February 2026",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "oakfield",
+            "date": "18 January 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "12 March 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "7 February 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "7 February 2026",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "L18": {
+      "shop": {
+        "url": "vantage.shop/p/meridian-book-14",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "grumbleweed",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Build quality is a clear step above what I expected at this price. Speakers are thin \u2014 you'll want headphones for anything but calls.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 5,
+            "date": "19 March 2026",
+            "body": "The keyboard is genuinely excellent \u2014 long travel, no flex in the deck.",
+            "verified": false
+          },
+          {
+            "handle": "brackish",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "The display is bright enough to use next to a window, which was my main worry. It picks up fingerprints immediately if you get the darker finish.",
+            "verified": true
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Build quality is a clear step above what I expected at this price. The charger is bulkier than it needs to be.",
+            "verified": true
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "Battery has comfortably survived a full working day for me. The webcam is mediocre. Fine for calls, not much else.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/laptops/meridian-book-14",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "K. Andersen",
+        "date": "3 April 2026",
+        "score": 8.6,
+        "verdict": "The Meridian Book 14 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use.",
+        "body": "We spent two weeks with the Meridian Book 14 as a primary work machine. At $839, it sits in the most crowded part of the market, which means the details decide it.\n\nRuns completely silent under normal office load. Fans only spin up when compiling. The display is bright enough to use next to a window, which was my main worry.\n\nIt is not without compromises. It picks up fingerprints immediately if you get the darker finish. Only two USB-C ports, so I'm living with a dongle.\n\nFull specifications are listed below. As always, we verify every figure against the manufacturer's published sheet rather than the retailer's listing, which is not always the same thing.",
+        "pros": [
+          "Boots fast and has stayed fast after four months of daily use.",
+          "The display is bright enough to use next to a window, which was my main worry."
+        ],
+        "cons": [
+          "It picks up fingerprints immediately if you get the darker finish.",
+          "The webcam is mediocre. Fine for calls, not much else."
+        ],
+        "prosNoun": [
+          "how well it has held up over time",
+          "display brightness"
+        ],
+        "consNoun": [
+          "a finish that shows fingerprints",
+          "a mediocre webcam"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/meridian-book-14-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Meridian Book 14 \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "mreid_88",
+            "date": "22 December 2025",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "clatter",
+            "date": "22 December 2025",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "14 June 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "date": "30 April 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "aviva.r",
+            "date": "9 May 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T01": {
+      "shop": {
+        "url": "vantage.shop/p/lisbon--alfama-garden-hotel",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. Wi-Fi dropped out a few times in the room.",
+            "verified": false
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 5,
+            "date": "18 January 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "Staff went out of their way when our flight landed late. Bathroom was clean but very small.",
+            "verified": true
+          },
+          {
+            "handle": "thirdcoast",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. Street noise until about eleven at night.",
+            "verified": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Room was quiet despite being on the street side. Bathroom was clean but very small.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/lisbon--alfama-garden-hotel",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "N. Bergstrom",
+        "date": "19 March 2026",
+        "score": 8.8,
+        "verdict": "A dependable, well-located option that does the basics properly.",
+        "body": "We stayed three nights at the Alfama Garden Hotel and assessed it against comparable options in the same price band.\n\nBreakfast was better than we expected for the price. Location was the selling point \u2014 walkable to almost everything we wanted.\n\nPoints against: a cramped bathroom, and awkward access with luggage.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Check-in was quick and the bags were held for us after checkout.",
+          "Staff went out of their way when our flight landed late."
+        ],
+        "cons": [
+          "Walls are thin \u2014 we could hear the corridor.",
+          "Street noise until about eleven at night."
+        ],
+        "prosNoun": [
+          "the check-in process",
+          "the staff"
+        ],
+        "consNoun": [
+          "thin walls",
+          "evening street noise"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/lisbon--alfama-garden-hotel-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Lisbon - Alfama Garden Hotel \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "not_a_reviewer",
+            "date": "7 February 2026",
+            "body": "Cross-shopping this against a couple of others. What am I missing?",
+            "op": true
+          },
+          {
+            "handle": "aviva.r",
+            "date": "12 March 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "30 April 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "12 March 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "22 December 2025",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T02": {
+      "shop": {
+        "url": "vantage.shop/p/lisbon--baixa-central-inn",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "oakfield",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": true
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 5,
+            "date": "9 May 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout.",
+            "verified": true
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": false
+          },
+          {
+            "handle": "hollowpoint",
+            "stars": 4,
+            "date": "19 March 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout. Walls are thin \u2014 we could hear the corridor.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/lisbon--baixa-central-inn",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "S. Baraniuk",
+        "date": "18 January 2026",
+        "score": 8.3,
+        "verdict": "Worth booking if the location suits you; less compelling otherwise.",
+        "body": "We stayed three nights at the Baixa Central Inn and assessed it against comparable options in the same price band.\n\nLocation was the selling point \u2014 walkable to almost everything we wanted. Breakfast was better than we expected for the price.\n\nPoints against: awkward access with luggage, and thin walls.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Room was quiet despite being on the street side.",
+          "Breakfast was better than we expected for the price."
+        ],
+        "cons": [
+          "Walls are thin \u2014 we could hear the corridor.",
+          "Street noise until about eleven at night."
+        ],
+        "prosNoun": [
+          "how quiet the rooms are",
+          "the breakfast"
+        ],
+        "consNoun": [
+          "thin walls",
+          "evening street noise"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/lisbon--baixa-central-inn-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Lisbon - Baixa Central Inn \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "sunkcost",
+            "date": "7 February 2026",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "thirdcoast",
+            "date": "22 December 2025",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "date": "12 March 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "12 March 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "22 December 2025",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T03": {
+      "shop": {
+        "url": "vantage.shop/p/prague--old-town-rezidence",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "oakfield",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": false
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 5,
+            "date": "30 April 2026",
+            "body": "Room was quiet despite being on the street side.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "Room was quiet despite being on the street side. Street noise until about eleven at night.",
+            "verified": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout. Street noise until about eleven at night.",
+            "verified": false
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "Staff went out of their way when our flight landed late. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/prague--old-town-rezidence",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "A. Ferreira",
+        "date": "27 February 2026",
+        "score": 9.1,
+        "verdict": "Good value for the location, with the usual caveats about older buildings.",
+        "body": "We stayed three nights at the Old Town Rezidence and assessed it against comparable options in the same price band.\n\nStaff went out of their way when our flight landed late. Location was the selling point \u2014 walkable to almost everything we wanted.\n\nPoints against: thin walls, and unreliable Wi-Fi.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Location was the selling point \u2014 walkable to almost everything we wanted.",
+          "Check-in was quick and the bags were held for us after checkout."
+        ],
+        "cons": [
+          "Street noise until about eleven at night.",
+          "Bathroom was clean but very small."
+        ],
+        "prosNoun": [
+          "the location",
+          "the check-in process"
+        ],
+        "consNoun": [
+          "evening street noise",
+          "a cramped bathroom"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/prague--old-town-rezidence-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Prague - Old Town Rezidence \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "aviva.r",
+            "date": "22 December 2025",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "sunkcost",
+            "date": "7 February 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "18 January 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "19 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "hollowpoint",
+            "date": "19 March 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T04": {
+      "shop": {
+        "url": "vantage.shop/p/prague--vinohrady-suites",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "sunkcost",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "Staff went out of their way when our flight landed late. Street noise until about eleven at night.",
+            "verified": true
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "The neighbourhood felt safe walking back in the evening. Wi-Fi dropped out a few times in the room.",
+            "verified": true
+          },
+          {
+            "handle": "thirdcoast",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. Street noise until about eleven at night.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Room was quiet despite being on the street side. Walls are thin \u2014 we could hear the corridor.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/prague--vinohrady-suites",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "R. Delacroix",
+        "date": "22 December 2025",
+        "score": 7.9,
+        "verdict": "Worth booking if the location suits you; less compelling otherwise.",
+        "body": "We stayed three nights at the Vinohrady Suites and assessed it against comparable options in the same price band.\n\nRoom was quiet despite being on the street side. Location was the selling point \u2014 walkable to almost everything we wanted.\n\nPoints against: thin walls, and unreliable Wi-Fi.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Location was the selling point \u2014 walkable to almost everything we wanted.",
+          "The neighbourhood felt safe walking back in the evening."
+        ],
+        "cons": [
+          "Bathroom was clean but very small.",
+          "No air conditioning in the room we had, which mattered in the afternoon."
+        ],
+        "prosNoun": [
+          "the location",
+          "the neighbourhood"
+        ],
+        "consNoun": [
+          "a cramped bathroom",
+          "the lack of air conditioning"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/prague--vinohrady-suites-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Prague - Vinohrady Suites \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "aviva.r",
+            "date": "22 December 2025",
+            "body": "Cross-shopping this against a couple of others. What am I missing?",
+            "op": true
+          },
+          {
+            "handle": "penny_dreadful",
+            "date": "22 December 2025",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "7 February 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "penny_dreadful",
+            "date": "27 February 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "hollowpoint",
+            "date": "9 May 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T05": {
+      "shop": {
+        "url": "vantage.shop/p/seville--triana-riverside",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "thirdcoast",
+            "stars": 5,
+            "date": "27 February 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout.",
+            "verified": false
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout.",
+            "verified": true
+          },
+          {
+            "handle": "sunkcost",
+            "stars": 5,
+            "date": "22 December 2025",
+            "body": "The neighbourhood felt safe walking back in the evening.",
+            "verified": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. No air conditioning in the room we had, which mattered in the afternoon.",
+            "verified": false
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 5,
+            "date": "12 March 2026",
+            "body": "Room was quiet despite being on the street side.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/seville--triana-riverside",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "J. Whitfield",
+        "date": "7 February 2026",
+        "score": 9.4,
+        "verdict": "Worth booking if the location suits you; less compelling otherwise.",
+        "body": "We stayed three nights at the Triana Riverside and assessed it against comparable options in the same price band.\n\nThe neighbourhood felt safe walking back in the evening. Check-in was quick and the bags were held for us after checkout.\n\nPoints against: thin walls, and awkward access with luggage.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Staff went out of their way when our flight landed late.",
+          "Staff went out of their way when our flight landed late."
+        ],
+        "cons": [
+          "Walls are thin \u2014 we could hear the corridor.",
+          "The lift is tiny and there were stairs to the first landing with luggage."
+        ],
+        "prosNoun": [
+          "the staff",
+          "the staff"
+        ],
+        "consNoun": [
+          "thin walls",
+          "awkward access with luggage"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/seville--triana-riverside-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Seville - Triana Riverside \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "not_a_reviewer",
+            "date": "12 March 2026",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "14 June 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "18 January 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "date": "18 January 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "brackish",
+            "date": "9 May 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T06": {
+      "shop": {
+        "url": "vantage.shop/p/seville--macarena-boutique",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "penny_dreadful",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. Wi-Fi dropped out a few times in the room.",
+            "verified": true
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 5,
+            "date": "30 April 2026",
+            "body": "Breakfast was better than we expected for the price.",
+            "verified": true
+          },
+          {
+            "handle": "penny_dreadful",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Breakfast was better than we expected for the price. Walls are thin \u2014 we could hear the corridor.",
+            "verified": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "12 March 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. Wi-Fi dropped out a few times in the room.",
+            "verified": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. Wi-Fi dropped out a few times in the room.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/seville--macarena-boutique",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "D. Vasquez",
+        "date": "22 December 2025",
+        "score": 8.6,
+        "verdict": "Worth booking if the location suits you; less compelling otherwise.",
+        "body": "We stayed three nights at the Macarena Boutique and assessed it against comparable options in the same price band.\n\nStaff went out of their way when our flight landed late. Room was quiet despite being on the street side.\n\nPoints against: awkward access with luggage, and thin walls.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Check-in was quick and the bags were held for us after checkout.",
+          "Check-in was quick and the bags were held for us after checkout."
+        ],
+        "cons": [
+          "Walls are thin \u2014 we could hear the corridor.",
+          "Street noise until about eleven at night."
+        ],
+        "prosNoun": [
+          "the check-in process",
+          "the check-in process"
+        ],
+        "consNoun": [
+          "thin walls",
+          "evening street noise"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/seville--macarena-boutique-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Seville - Macarena Boutique \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "mildlyannoyed",
+            "date": "18 January 2026",
+            "body": "Cross-shopping this against a couple of others. What am I missing?",
+            "op": true
+          },
+          {
+            "handle": "clatter",
+            "date": "27 February 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "22 December 2025",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "7 February 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "penny_dreadful",
+            "date": "27 February 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T07": {
+      "shop": {
+        "url": "vantage.shop/p/krakow--kazimierz-house",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "Room was quiet despite being on the street side. Wi-Fi dropped out a few times in the room.",
+            "verified": true
+          },
+          {
+            "handle": "oakfield",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout.",
+            "verified": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. No air conditioning in the room we had, which mattered in the afternoon.",
+            "verified": true
+          },
+          {
+            "handle": "thirdcoast",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Room was quiet despite being on the street side. Street noise until about eleven at night.",
+            "verified": true
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "14 June 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout. Walls are thin \u2014 we could hear the corridor.",
+            "verified": false
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/krakow--kazimierz-house",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "J. Whitfield",
+        "date": "18 January 2026",
+        "score": 8.5,
+        "verdict": "Good value for the location, with the usual caveats about older buildings.",
+        "body": "We stayed three nights at the Kazimierz House and assessed it against comparable options in the same price band.\n\nThe neighbourhood felt safe walking back in the evening. Check-in was quick and the bags were held for us after checkout.\n\nPoints against: awkward access with luggage, and the lack of air conditioning.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Room was quiet despite being on the street side.",
+          "The neighbourhood felt safe walking back in the evening."
+        ],
+        "cons": [
+          "Wi-Fi dropped out a few times in the room.",
+          "Bathroom was clean but very small."
+        ],
+        "prosNoun": [
+          "how quiet the rooms are",
+          "the neighbourhood"
+        ],
+        "consNoun": [
+          "unreliable Wi-Fi",
+          "a cramped bathroom"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/krakow--kazimierz-house-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Krakow - Kazimierz House \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "mreid_88",
+            "date": "7 February 2026",
+            "body": "About to pull the trigger on this. Talk me out of it.",
+            "op": true
+          },
+          {
+            "handle": "mreid_88",
+            "date": "3 April 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "14 June 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "brackish",
+            "date": "22 December 2025",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          },
+          {
+            "handle": "aviva.r",
+            "date": "7 February 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T08": {
+      "shop": {
+        "url": "vantage.shop/p/krakow--rynek-grand",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "tessellate",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted.",
+            "verified": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Breakfast was better than we expected for the price.",
+            "verified": true
+          },
+          {
+            "handle": "brackish",
+            "stars": 5,
+            "date": "3 April 2026",
+            "body": "Staff went out of their way when our flight landed late.",
+            "verified": true
+          },
+          {
+            "handle": "brackish",
+            "stars": 4,
+            "date": "22 December 2025",
+            "body": "Room was quiet despite being on the street side. Bathroom was clean but very small.",
+            "verified": false
+          },
+          {
+            "handle": "tessellate",
+            "stars": 5,
+            "date": "7 February 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/krakow--rynek-grand",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "K. Andersen",
+        "date": "18 January 2026",
+        "score": 9.3,
+        "verdict": "Worth booking if the location suits you; less compelling otherwise.",
+        "body": "We stayed three nights at the Rynek Grand and assessed it against comparable options in the same price band.\n\nCheck-in was quick and the bags were held for us after checkout. Check-in was quick and the bags were held for us after checkout.\n\nPoints against: a cramped bathroom, and awkward access with luggage.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "The neighbourhood felt safe walking back in the evening.",
+          "The neighbourhood felt safe walking back in the evening."
+        ],
+        "cons": [
+          "The lift is tiny and there were stairs to the first landing with luggage.",
+          "Street noise until about eleven at night."
+        ],
+        "prosNoun": [
+          "the neighbourhood",
+          "the neighbourhood"
+        ],
+        "consNoun": [
+          "awkward access with luggage",
+          "evening street noise"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/krakow--rynek-grand-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Krakow - Rynek Grand \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "not_a_reviewer",
+            "date": "27 February 2026",
+            "body": "Anyone actually using one of these day to day? Spec sheet looks fine but spec sheets always do.",
+            "op": true
+          },
+          {
+            "handle": "sunkcost",
+            "date": "22 December 2025",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "27 February 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "aviva.r",
+            "date": "22 December 2025",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          },
+          {
+            "handle": "wentworth_j",
+            "date": "19 March 2026",
+            "body": "Whatever you do, compare the real numbers rather than the summary. I got caught out by that once.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T09": {
+      "shop": {
+        "url": "vantage.shop/p/porto--ribeira-views",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "penny_dreadful",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": true
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 5,
+            "date": "14 June 2026",
+            "body": "The neighbourhood felt safe walking back in the evening.",
+            "verified": true
+          },
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Staff went out of their way when our flight landed late. No air conditioning in the room we had, which mattered in the afternoon.",
+            "verified": true
+          },
+          {
+            "handle": "aviva.r",
+            "stars": 4,
+            "date": "27 February 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": false
+          },
+          {
+            "handle": "grumbleweed",
+            "stars": 4,
+            "date": "9 May 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout. Wi-Fi dropped out a few times in the room.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/porto--ribeira-views",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "P. Silvestri",
+        "date": "18 January 2026",
+        "score": 8.9,
+        "verdict": "Worth booking if the location suits you; less compelling otherwise.",
+        "body": "We stayed three nights at the Ribeira Views and assessed it against comparable options in the same price band.\n\nThe neighbourhood felt safe walking back in the evening. The neighbourhood felt safe walking back in the evening.\n\nPoints against: awkward access with luggage, and a cramped bathroom.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Location was the selling point \u2014 walkable to almost everything we wanted.",
+          "Room was quiet despite being on the street side."
+        ],
+        "cons": [
+          "Wi-Fi dropped out a few times in the room.",
+          "Walls are thin \u2014 we could hear the corridor."
+        ],
+        "prosNoun": [
+          "the location",
+          "how quiet the rooms are"
+        ],
+        "consNoun": [
+          "unreliable Wi-Fi",
+          "thin walls"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/porto--ribeira-views-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Porto - Ribeira Views \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "penny_dreadful",
+            "date": "12 March 2026",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "grumbleweed",
+            "date": "12 March 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "clatter",
+            "date": "9 May 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "18 January 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "12 March 2026",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T10": {
+      "shop": {
+        "url": "vantage.shop/p/porto--cedofeita-rooms",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "thirdcoast",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Staff went out of their way when our flight landed late. No air conditioning in the room we had, which mattered in the afternoon.",
+            "verified": true
+          },
+          {
+            "handle": "grumbleweed",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. Wi-Fi dropped out a few times in the room.",
+            "verified": true
+          },
+          {
+            "handle": "clatter",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Breakfast was better than we expected for the price. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": false
+          },
+          {
+            "handle": "quietkeyboard",
+            "stars": 4,
+            "date": "7 February 2026",
+            "body": "Staff went out of their way when our flight landed late. Street noise until about eleven at night.",
+            "verified": false
+          },
+          {
+            "handle": "not_a_reviewer",
+            "stars": 4,
+            "date": "3 April 2026",
+            "body": "The neighbourhood felt safe walking back in the evening. Street noise until about eleven at night.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/porto--cedofeita-rooms",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "D. Vasquez",
+        "date": "7 February 2026",
+        "score": 8.0,
+        "verdict": "A dependable, well-located option that does the basics properly.",
+        "body": "We stayed three nights at the Cedofeita Rooms and assessed it against comparable options in the same price band.\n\nCheck-in was quick and the bags were held for us after checkout. Breakfast was better than we expected for the price.\n\nPoints against: a cramped bathroom, and a cramped bathroom.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Location was the selling point \u2014 walkable to almost everything we wanted.",
+          "Staff went out of their way when our flight landed late."
+        ],
+        "cons": [
+          "Wi-Fi dropped out a few times in the room.",
+          "Street noise until about eleven at night."
+        ],
+        "prosNoun": [
+          "the location",
+          "the staff"
+        ],
+        "consNoun": [
+          "unreliable Wi-Fi",
+          "evening street noise"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/porto--cedofeita-rooms-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Porto - Cedofeita Rooms \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "thirdcoast",
+            "date": "9 May 2026",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "wentworth_j",
+            "date": "12 March 2026",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "hollowpoint",
+            "date": "19 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "7 February 2026",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          },
+          {
+            "handle": "mreid_88",
+            "date": "27 February 2026",
+            "body": "Mine's been solid. The one thing I'd say is don't trust the marketing copy, look at the actual spec sheet.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T11": {
+      "shop": {
+        "url": "vantage.shop/p/valencia--ruzafa-loft",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "tessellate",
+            "stars": 4,
+            "date": "18 January 2026",
+            "body": "Breakfast was better than we expected for the price. Street noise until about eleven at night.",
+            "verified": true
+          },
+          {
+            "handle": "thirdcoast",
+            "stars": 5,
+            "date": "14 June 2026",
+            "body": "Breakfast was better than we expected for the price.",
+            "verified": true
+          },
+          {
+            "handle": "wentworth_j",
+            "stars": 4,
+            "date": "19 March 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": true
+          },
+          {
+            "handle": "mildlyannoyed",
+            "stars": 4,
+            "date": "19 March 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout. No air conditioning in the room we had, which mattered in the afternoon.",
+            "verified": true
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 4,
+            "date": "14 June 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout. The lift is tiny and there were stairs to the first landing with luggage.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/valencia--ruzafa-loft",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "S. Baraniuk",
+        "date": "14 June 2026",
+        "score": 8.3,
+        "verdict": "A dependable, well-located option that does the basics properly.",
+        "body": "We stayed three nights at the Ruzafa Loft and assessed it against comparable options in the same price band.\n\nBreakfast was better than we expected for the price. Check-in was quick and the bags were held for us after checkout.\n\nPoints against: thin walls, and unreliable Wi-Fi.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Room was quiet despite being on the street side.",
+          "The neighbourhood felt safe walking back in the evening."
+        ],
+        "cons": [
+          "Wi-Fi dropped out a few times in the room.",
+          "Walls are thin \u2014 we could hear the corridor."
+        ],
+        "prosNoun": [
+          "how quiet the rooms are",
+          "the neighbourhood"
+        ],
+        "consNoun": [
+          "unreliable Wi-Fi",
+          "thin walls"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/valencia--ruzafa-loft-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Valencia - Ruzafa Loft \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "mildlyannoyed",
+            "date": "12 March 2026",
+            "body": "Been running one for a few months, happy to answer questions.",
+            "op": true
+          },
+          {
+            "handle": "tessellate",
+            "date": "19 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "22 December 2025",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "sunkcost",
+            "date": "22 December 2025",
+            "body": "Check the exact configuration before you buy \u2014 the listings vary and not every retailer is careful about which one they show you.",
+            "op": false
+          },
+          {
+            "handle": "oakfield",
+            "date": "7 February 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          }
+        ]
+      }
+    },
+    "T12": {
+      "shop": {
+        "url": "vantage.shop/p/valencia--marina-suites",
+        "domain": "vantage.shop",
+        "siteName": "Vantage",
+        "reviews": [
+          {
+            "handle": "hollowpoint",
+            "stars": 5,
+            "date": "9 May 2026",
+            "body": "Check-in was quick and the bags were held for us after checkout.",
+            "verified": false
+          },
+          {
+            "handle": "clatter",
+            "stars": 5,
+            "date": "19 March 2026",
+            "body": "Staff went out of their way when our flight landed late.",
+            "verified": true
+          },
+          {
+            "handle": "penny_dreadful",
+            "stars": 5,
+            "date": "22 December 2025",
+            "body": "Check-in was quick and the bags were held for us after checkout.",
+            "verified": false
+          },
+          {
+            "handle": "thirdcoast",
+            "stars": 4,
+            "date": "30 April 2026",
+            "body": "Location was the selling point \u2014 walkable to almost everything we wanted. Street noise until about eleven at night.",
+            "verified": false
+          },
+          {
+            "handle": "mreid_88",
+            "stars": 5,
+            "date": "14 June 2026",
+            "body": "Staff went out of their way when our flight landed late.",
+            "verified": true
+          }
+        ]
+      },
+      "review": {
+        "url": "techbench.review/travel/valencia--marina-suites",
+        "domain": "techbench.review",
+        "siteName": "TechBench",
+        "author": "A. Ferreira",
+        "date": "7 February 2026",
+        "score": 9.4,
+        "verdict": "A dependable, well-located option that does the basics properly.",
+        "body": "We stayed three nights at the Marina Suites and assessed it against comparable options in the same price band.\n\nStaff went out of their way when our flight landed late. Location was the selling point \u2014 walkable to almost everything we wanted.\n\nPoints against: the lack of air conditioning, and a cramped bathroom.\n\nCosts below are per the operator's published rates at time of writing.",
+        "pros": [
+          "Breakfast was better than we expected for the price.",
+          "The neighbourhood felt safe walking back in the evening."
+        ],
+        "cons": [
+          "Street noise until about eleven at night.",
+          "Walls are thin \u2014 we could hear the corridor."
+        ],
+        "prosNoun": [
+          "the breakfast",
+          "the neighbourhood"
+        ],
+        "consNoun": [
+          "evening street noise",
+          "thin walls"
+        ]
+      },
+      "forum": {
+        "url": "gearloop.forum/t/valencia--marina-suites-owners-thread",
+        "domain": "gearloop.forum",
+        "siteName": "GearLoop",
+        "title": "Valencia - Marina Suites \u2014 owners thread",
+        "posts": [
+          {
+            "handle": "mreid_88",
+            "date": "14 June 2026",
+            "body": "Cross-shopping this against a couple of others. What am I missing?",
+            "op": true
+          },
+          {
+            "handle": "tessellate",
+            "date": "9 May 2026",
+            "body": "Solid for the money. There are better machines, but not at this price.",
+            "op": false
+          },
+          {
+            "handle": "mildlyannoyed",
+            "date": "22 December 2025",
+            "body": "Had mine since launch. No complaints worth writing home about.",
+            "op": false
+          },
+          {
+            "handle": "thirdcoast",
+            "date": "7 February 2026",
+            "body": "It's fine. Not exciting, but fine.",
+            "op": false
+          },
+          {
+            "handle": "brackish",
+            "date": "12 March 2026",
+            "body": "I returned mine, but for reasons specific to my setup. Wouldn't generalise.",
+            "op": false
+          }
+        ]
+      }
+    }
+  }
+}

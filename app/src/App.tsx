@@ -1,9 +1,12 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { APP_VERSION } from "./config";
 import catalogJson from "./data/catalog.json";
 import trialsJson from "./data/trials.json";
+import sourcesJson from "./data/sources.json";
 import { orderTrials, readLaunch } from "./lib/assignment";
 import { EventLog, saveLocal } from "./lib/logging";
+import { telemetry } from "./lib/telemetry";
+import type { Sources } from "./mockweb/SourcePages";
 import type {
   Catalog, Phase, SessionPayload, SurveyResponses, Trial, TrialResponse,
 } from "./types";
@@ -14,6 +17,7 @@ import { Debrief, Excluded } from "./components/Debrief";
 
 const catalog = catalogJson as unknown as Catalog;
 const allTrials = (trialsJson as unknown as { trials: Trial[] }).trials;
+const sources = sourcesJson as unknown as Sources;
 
 export default function App() {
   // Launch parameters are read once: re-reading would reroll the condition.
@@ -23,6 +27,13 @@ export default function App() {
     () => orderTrials(allTrials, launch.rng),
     [launch],
   );
+
+  // Telemetry runs for the whole session, not just the trials: time spent on the
+  // instructions and the questionnaire is part of how engaged a participant was.
+  useEffect(() => {
+    telemetry.start();
+    return () => telemetry.stop();
+  }, []);
 
   const [phase, setPhase] = useState<Phase>("consent");
   const [trialIndex, setTrialIndex] = useState(0);
@@ -53,6 +64,7 @@ export default function App() {
     comprehensionAttempts: attempts,
     completedAt: null,
     events: log.current.all(),
+    telemetry: telemetry.export(),
   });
 
   const startedAt = useRef(new Date().toISOString());
@@ -72,7 +84,8 @@ export default function App() {
       decision: r.decision,
       confidence: r.confidence,
       rtMs: r.rtMs,
-      nVerifications: r.verifications.length,
+      nSourceVisits: r.sourceVisits.length,
+      visitedDisputedSource: r.visitedDisputedSource,
     });
     // Mirror progress after every trial so a mid-session drop-out is recoverable.
     saveLocal(buildPayload(next, survey, comprehensionAttempts));
@@ -129,6 +142,7 @@ export default function App() {
             total={trials.length}
             condition={launch.condition}
             catalog={catalog}
+            sources={sources}
             rng={launch.rng}
             onComplete={onTrialComplete}
           />

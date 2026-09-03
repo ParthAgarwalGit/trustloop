@@ -40,24 +40,60 @@ export interface Catalog {
   items: Record<string, CatalogItem>;
 }
 
-export interface AgentStep {
-  n: number;
-  action: string;
-  detail: string;
+export interface ToolCall {
+  kind: "search" | "filter" | "read" | "compare";
+  label: string;
+  detail?: string;
+  url?: string;
+  durationMs: number;
 }
 
-export interface AgentClaim {
-  constraintId: string;
+export interface Citation {
+  n: number;
+  url: string;
+  itemId: string;
+  sourceType: "shop" | "review" | "forum";
+  anchor: string | null;
+  label: string;
+}
+
+export interface AgentBlock {
+  type: "h" | "p" | "candidate";
+  text?: string;
+  /** candidate blocks only */
+  name?: string;
+  price?: string;
+  cite?: number;
+}
+
+export interface AgentResponse {
+  blocks: AgentBlock[];
+  citations: Citation[];
+}
+
+/** What the agent asserted about the recommended item. Scoring only, never rendered. */
+export interface StatedFact {
+  itemId: string;
   field: string;
-  fieldLabel: string;
-  constraintLabel: string;
   statedValue: number | boolean;
   statedValueText: string;
   catalogValue: number | boolean;
   catalogValueText: string;
-  statedSatisfies: boolean;
-  trulySatisfies: boolean;
-  isFalseClaim: boolean;
+  isFalse: boolean;
+  constraintId: string | null;
+  sourceUrl: string;
+}
+
+/** The single fact that determines the trial's correctness, and where truth lives. */
+export interface DisputedFact {
+  kind: "omission" | "contradiction";
+  field: string;
+  constraintId: string | null;
+  statedValue?: number | boolean;
+  statedValueText?: string;
+  catalogValue: number | boolean;
+  catalogValueText: string;
+  sourceUrl: string;
 }
 
 export interface Trial {
@@ -74,17 +110,24 @@ export interface Trial {
   errorType: "dropped_constraint" | "false_claim" | "arithmetic" | null;
   violatedConstraintIds: string[];
   compliantCandidateIds: string[];
+  statedFacts: StatedFact[];
+  disputedFact: DisputedFact | null;
   // --- agent output ---
-  agentSteps: AgentStep[];
-  agentClaims: AgentClaim[];
-  omittedConstraintIds: string[];
+  toolCalls: ToolCall[];
+  response: AgentResponse;
 }
 
-/** One verification action: the participant opened the evidence for a claim. */
-export interface VerificationEvent {
-  constraintId: string;
+/** One source visit during a trial. */
+export interface SourceVisit {
+  url: string;
+  itemId: string;
+  sourceType: string;
   /** ms since the trial was first rendered */
   tMs: number;
+  dwellMs: number;
+  maxScrollPct: number;
+  /** spec-table rows that were on screen long enough to read, and for how long */
+  specRowsSeen: Record<string, number>;
 }
 
 export interface TrialResponse {
@@ -97,10 +140,14 @@ export interface TrialResponse {
   chosenId: string;
   /** ms from first render to submitting the decision */
   rtMs: number;
-  /** which claims the participant expanded, in order (full condition only) */
-  verifications: VerificationEvent[];
-  /** whether the participant opened the "other options considered" list */
-  openedAlternatives: boolean;
+  /** every source page opened during this trial, in order */
+  sourceVisits: SourceVisit[];
+  /** ms from render to the agent finishing its response (waiting time) */
+  agentDoneMs: number;
+  /** did the participant open the page carrying the disputed fact? */
+  visitedDisputedSource: boolean;
+  /** did the disputed spec row actually spend time on screen? */
+  sawDisputedRowMs: number;
 }
 
 export type SurveyResponses = Record<string, number | string>;
@@ -140,6 +187,8 @@ export interface SessionPayload {
   completedAt: string | null;
   /** durable event log: every state transition and interaction */
   events: LoggedEvent[];
+  /** behavioural telemetry: source visits, cursor traces, attention proxies */
+  telemetry?: { events: unknown[]; traces: unknown[] };
 }
 
 export interface LoggedEvent {

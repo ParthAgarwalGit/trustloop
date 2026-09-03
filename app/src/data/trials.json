@@ -55,70 +55,238 @@
       "compliantCandidateIds": [
         "L01"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Under $900, At least 16 GB RAM, Rated 4.3 or higher."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "1 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Aeris Slim 14 as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "L01",
           "field": "price",
-          "fieldLabel": "Price",
-          "constraintLabel": "Under $900",
           "statedValue": 829,
           "statedValueText": "$829",
           "catalogValue": 829,
           "catalogValueText": "$829",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/aeris-slim-14"
         },
         {
-          "constraintId": "c2",
+          "itemId": "L01",
           "field": "ram_gb",
-          "fieldLabel": "RAM",
-          "constraintLabel": "At least 16 GB RAM",
           "statedValue": 16,
           "statedValueText": "16 GB",
           "catalogValue": 16,
           "catalogValueText": "16 GB",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/aeris-slim-14"
         },
         {
-          "constraintId": "c3",
+          "itemId": "L01",
           "field": "rating",
-          "fieldLabel": "User rating",
-          "constraintLabel": "Rated 4.3 or higher",
           "statedValue": 4.4,
           "statedValueText": "4.4/5",
           "catalogValue": 4.4,
           "catalogValueText": "4.4/5",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/aeris-slim-14"
+        },
+        {
+          "itemId": "L01",
+          "field": "screen_in",
+          "statedValue": 14.0,
+          "statedValueText": "14\"",
+          "catalogValue": 14.0,
+          "catalogValueText": "14\"",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/aeris-slim-14"
+        },
+        {
+          "itemId": "L01",
+          "field": "storage_gb",
+          "statedValue": 512,
+          "statedValueText": "512 GB",
+          "catalogValue": 512,
+          "catalogValueText": "512 GB",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/aeris-slim-14"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": null,
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for laptops",
+          "detail": "18 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Under $900, At least 16 GB RAM, Rated 4.3 or higher",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Aeris Slim 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/aeris-slim-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Nimbus Pro 15 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/nimbus-pro-15",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Kestrel Slim 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/kestrel-slim-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/laptops/aeris-slim-14",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/aeris-slim-14#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Aeris Slim 14** [1], which is priced at $829 and ships with 16 GB of memory. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Aeris Slim 14",
+            "cite": 1,
+            "price": "$829",
+            "text": "This is my recommendation. It is priced at $829, ships with 16 GB of memory, and holds a 4.4/5 customer rating. It also uses a 14\" panel and has 512 GB of storage. TechBench scored it 8.6/10 [2], calling it \u201cThe Aeris Slim 14 makes a strong case on value, provided its particular set of compromises happens to line up with your priorities\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being a slightly loose hinge."
+          },
+          {
+            "type": "candidate",
+            "name": "Nimbus Pro 15",
+            "cite": 4,
+            "price": "$899",
+            "text": "Close, but it loses out on balance. It lists at $899, ships with 8 GB of memory, and holds a 4.2/5 customer rating. It's a defensible choice, but it doesn't quite match the Aeris Slim 14 on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Kestrel Slim 14",
+            "cite": 5,
+            "price": "$819",
+            "text": "I set this aside early. It lists at $819 and comes with 8 GB of RAM."
+          },
+          {
+            "type": "candidate",
+            "name": "Nimbus Air 13",
+            "cite": 6,
+            "price": "$679",
+            "text": "I ruled this out. It lists at $679 and comes with 8 GB of RAM."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: a slightly loose hinge and a slightly loose hinge. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, display brightness draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Aeris Slim 14** [1]. Weighing your requirements (Under $900, At least 16 GB RAM, Rated 4.3 or higher) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/aeris-slim-14",
+            "itemId": "L01",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Aeris Slim 14"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/laptops/aeris-slim-14",
+            "itemId": "L01",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Aeris Slim 14"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/aeris-slim-14#reviews",
+            "itemId": "L01",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/nimbus-pro-15",
+            "itemId": "L02",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Nimbus Pro 15"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/kestrel-slim-14",
+            "itemId": "L12",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Kestrel Slim 14"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/nimbus-air-13",
+            "itemId": "L06",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Nimbus Air 13"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/aeris-slim-14-owners-thread",
+            "itemId": "L01",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S02",
@@ -171,70 +339,238 @@
         "T04",
         "T11"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Total under $800, Hotel rated 4.0+, Direct flight."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "2 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Valencia - Ruzafa Loft as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "T11",
           "field": "total_price",
-          "fieldLabel": "Total price",
-          "constraintLabel": "Total under $800",
           "statedValue": 601,
           "statedValueText": "$601",
           "catalogValue": 601,
           "catalogValueText": "$601",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/valencia--ruzafa-loft"
         },
         {
-          "constraintId": "c2",
+          "itemId": "T11",
           "field": "hotel_rating",
-          "fieldLabel": "Hotel rating",
-          "constraintLabel": "Hotel rated 4.0+",
           "statedValue": 4.2,
           "statedValueText": "4.2/5",
           "catalogValue": 4.2,
           "catalogValueText": "4.2/5",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/valencia--ruzafa-loft"
         },
         {
-          "constraintId": "c3",
+          "itemId": "T11",
           "field": "stops",
-          "fieldLabel": "Stops",
-          "constraintLabel": "Direct flight",
           "statedValue": 0,
           "statedValueText": "0",
           "catalogValue": 0,
           "catalogValueText": "0",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/valencia--ruzafa-loft"
+        },
+        {
+          "itemId": "T11",
+          "field": "refundable",
+          "statedValue": true,
+          "statedValueText": "Yes",
+          "catalogValue": true,
+          "catalogValueText": "Yes",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/valencia--ruzafa-loft"
+        },
+        {
+          "itemId": "T11",
+          "field": "nights",
+          "statedValue": 3,
+          "statedValueText": "3",
+          "catalogValue": 3,
+          "catalogValueText": "3",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/valencia--ruzafa-loft"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": null,
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for trip packages",
+          "detail": "12 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Total under $800, Hotel rated 4.0+, Direct flight",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Valencia - Ruzafa Loft listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/valencia--ruzafa-loft",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Prague - Vinohrady Suites listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/prague--vinohrady-suites",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Lisbon - Baixa Central Inn listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/lisbon--baixa-central-inn",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/travel/valencia--ruzafa-loft",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/valencia--ruzafa-loft#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Valencia - Ruzafa Loft** [1], which totals $601 and scores 4.2/5 with guests. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Valencia - Ruzafa Loft",
+            "cite": 1,
+            "price": "$601",
+            "text": "This is the strongest option of the set. It totals $601, scores 4.2/5 with guests, and flies with 0 stops. It also is refundable and runs for 3 nights. TechBench scored it 8.3/10 [2], calling it \u201cA dependable, well-located option that does the basics properly\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being unreliable Wi-Fi."
+          },
+          {
+            "type": "candidate",
+            "name": "Prague - Vinohrady Suites",
+            "cite": 4,
+            "price": "$620",
+            "text": "A reasonable second choice. It comes to $620 in total, holds a 4/5 guest rating, and has 0 stops. It's a defensible choice, but it doesn't quite match the Valencia - Ruzafa Loft on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Lisbon - Baixa Central Inn",
+            "cite": 5,
+            "price": "$696",
+            "text": "This didn't make the cut. It works out at $696 all in and holds a 4.1/5 guest rating."
+          },
+          {
+            "type": "candidate",
+            "name": "Krakow - Kazimierz House",
+            "cite": 6,
+            "price": "$649",
+            "text": "This didn't make the cut. It totals $649 and holds a 4.3/5 guest rating."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: unreliable Wi-Fi and thin walls. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, how quiet the rooms are draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Valencia - Ruzafa Loft** [1]. Weighing your requirements (Total under $800, Hotel rated 4.0+, Direct flight) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/valencia--ruzafa-loft",
+            "itemId": "T11",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Valencia - Ruzafa Loft"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/travel/valencia--ruzafa-loft",
+            "itemId": "T11",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Valencia - Ruzafa Loft"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/valencia--ruzafa-loft#reviews",
+            "itemId": "T11",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/prague--vinohrady-suites",
+            "itemId": "T04",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Prague - Vinohrady Suites"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/lisbon--baixa-central-inn",
+            "itemId": "T02",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Lisbon - Baixa Central Inn"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/krakow--kazimierz-house",
+            "itemId": "T07",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Krakow - Kazimierz House"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/valencia--ruzafa-loft-owners-thread",
+            "itemId": "T11",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S03",
@@ -288,70 +624,238 @@
         "L17",
         "L06"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Under $800, Lighter than 1.3 kg, 8+ hours battery."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "3 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Corvid Air 13 as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "L03",
           "field": "price",
-          "fieldLabel": "Price",
-          "constraintLabel": "Under $800",
           "statedValue": 749,
           "statedValueText": "$749",
           "catalogValue": 749,
           "catalogValueText": "$749",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/corvid-air-13"
         },
         {
-          "constraintId": "c2",
+          "itemId": "L03",
           "field": "weight_kg",
-          "fieldLabel": "Weight",
-          "constraintLabel": "Lighter than 1.3 kg",
           "statedValue": 1.18,
           "statedValueText": "1.18 kg",
           "catalogValue": 1.18,
           "catalogValueText": "1.18 kg",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/corvid-air-13"
         },
         {
-          "constraintId": "c3",
+          "itemId": "L03",
           "field": "battery_hours",
-          "fieldLabel": "Battery life",
-          "constraintLabel": "8+ hours battery",
           "statedValue": 12.0,
           "statedValueText": "12 h",
           "catalogValue": 12.0,
           "catalogValueText": "12 h",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/corvid-air-13"
+        },
+        {
+          "itemId": "L03",
+          "field": "screen_in",
+          "statedValue": 13.3,
+          "statedValueText": "13.3\"",
+          "catalogValue": 13.3,
+          "catalogValueText": "13.3\"",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/corvid-air-13"
+        },
+        {
+          "itemId": "L03",
+          "field": "rating",
+          "statedValue": 4.3,
+          "statedValueText": "4.3/5",
+          "catalogValue": 4.3,
+          "catalogValueText": "4.3/5",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/corvid-air-13"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": null,
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for laptops",
+          "detail": "18 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Under $800, Lighter than 1.3 kg, 8+ hours battery",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Corvid Air 13 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/corvid-air-13",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Kestrel Work 15 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/kestrel-work-15",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Kestrel Air 13 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/kestrel-air-13",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/laptops/corvid-air-13",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/corvid-air-13#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Corvid Air 13** [1], which lists at $749 and tips the scales at 1.18 kg. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Corvid Air 13",
+            "cite": 1,
+            "price": "$749",
+            "text": "This is my recommendation. It lists at $749, tips the scales at 1.18 kg, and gets around 12 h on a charge. It also uses a 13.3\" panel and holds a 4.3/5 customer rating. TechBench scored it 8.7/10 [2], calling it \u201cThere is nothing exotic about the Corvid Air 13, and that is largely the point. It is a competent machine at a competitive price\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being a mediocre webcam."
+          },
+          {
+            "type": "candidate",
+            "name": "Kestrel Work 15",
+            "cite": 4,
+            "price": "$789",
+            "text": "A reasonable second choice. It is priced at $789, weighs 1.88 kg, and gets around 7.5 h on a charge. It's a defensible choice, but it doesn't quite match the Corvid Air 13 on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Kestrel Air 13",
+            "cite": 5,
+            "price": "$759",
+            "text": "I ruled this out. It comes in at $759 and weighs 1.15 kg."
+          },
+          {
+            "type": "candidate",
+            "name": "Corvid Lite 13",
+            "cite": 6,
+            "price": "$729",
+            "text": "This didn't make the cut. It lists at $729 and weighs 1.52 kg."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: a mediocre webcam and a thin port selection. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, how quietly it runs draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Corvid Air 13** [1]. Weighing your requirements (Under $800, Lighter than 1.3 kg, 8+ hours battery) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/corvid-air-13",
+            "itemId": "L03",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Corvid Air 13"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/laptops/corvid-air-13",
+            "itemId": "L03",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Corvid Air 13"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/corvid-air-13#reviews",
+            "itemId": "L03",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/kestrel-work-15",
+            "itemId": "L08",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Kestrel Work 15"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/kestrel-air-13",
+            "itemId": "L17",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Kestrel Air 13"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/corvid-lite-13",
+            "itemId": "L14",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Corvid Lite 13"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/corvid-air-13-owners-thread",
+            "itemId": "L03",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S04",
@@ -407,59 +911,245 @@
         "L15",
         "L12"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Under $900, 512 GB+ storage."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "4 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Valta Book 14 as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "L04",
           "field": "price",
-          "fieldLabel": "Price",
-          "constraintLabel": "Under $900",
           "statedValue": 869,
           "statedValueText": "$869",
           "catalogValue": 869,
           "catalogValueText": "$869",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/valta-book-14"
         },
         {
-          "constraintId": "c2",
+          "itemId": "L04",
           "field": "storage_gb",
-          "fieldLabel": "Storage",
-          "constraintLabel": "512 GB+ storage",
           "statedValue": 512,
           "statedValueText": "512 GB",
           "catalogValue": 512,
           "catalogValueText": "512 GB",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/valta-book-14"
+        },
+        {
+          "itemId": "L04",
+          "field": "screen_in",
+          "statedValue": 14.0,
+          "statedValueText": "14\"",
+          "catalogValue": 14.0,
+          "catalogValueText": "14\"",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/valta-book-14"
+        },
+        {
+          "itemId": "L04",
+          "field": "rating",
+          "statedValue": 4.5,
+          "statedValueText": "4.5/5",
+          "catalogValue": 4.5,
+          "catalogValueText": "4.5/5",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/valta-book-14"
+        },
+        {
+          "itemId": "L04",
+          "field": "battery_hours",
+          "statedValue": 10.5,
+          "statedValueText": "10.5 h",
+          "catalogValue": 10.5,
+          "catalogValueText": "10.5 h",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/valta-book-14"
         }
       ],
-      "omittedConstraintIds": [
-        "c3"
-      ]
+      "disputedFact": {
+        "kind": "omission",
+        "field": "weight_kg",
+        "constraintId": "c3",
+        "catalogValue": 1.71,
+        "catalogValueText": "1.71 kg",
+        "sourceUrl": "vantage.shop/p/valta-book-14"
+      },
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for laptops",
+          "detail": "18 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Under $900, 512 GB+ storage, Lighter than 1.5 kg",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Valta Book 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/valta-book-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Aeris Ultra 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/aeris-ultra-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Nimbus Studio 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/nimbus-studio-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/laptops/valta-book-14",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/valta-book-14#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Valta Book 14** [1], which is priced at $869 and has 512 GB of storage. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Valta Book 14",
+            "cite": 1,
+            "price": "$869",
+            "text": "This is the strongest option of the set. It is priced at $869, has 512 GB of storage, and has a 14\" display. It also averages 4.5/5 from customers and is rated for 10.5 h of battery. TechBench scored it 8.8/10 [2], calling it \u201cThe Valta Book 14 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being a mediocre webcam."
+          },
+          {
+            "type": "candidate",
+            "name": "Aeris Ultra 14",
+            "cite": 4,
+            "price": "$879",
+            "text": "Competitive, though not my pick. It comes in at $879, includes a 512 GB SSD, and has a 14\" display. It's a defensible choice, but it doesn't quite match the Valta Book 14 on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Nimbus Studio 14",
+            "cite": 5,
+            "price": "$889",
+            "text": "I set this aside early. It lists at $889 and includes a 512 GB SSD."
+          },
+          {
+            "type": "candidate",
+            "name": "Aeris Book 15",
+            "cite": 6,
+            "price": "$949",
+            "text": "This didn't make the cut. It comes in at $949 and includes a 1024 GB SSD."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: a mediocre webcam and occasional coil whine. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, the keyboard draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Valta Book 14** [1]. Weighing your requirements (Under $900, 512 GB+ storage, Lighter than 1.5 kg) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/valta-book-14",
+            "itemId": "L04",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Valta Book 14"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/laptops/valta-book-14",
+            "itemId": "L04",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Valta Book 14"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/valta-book-14#reviews",
+            "itemId": "L04",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/aeris-ultra-14",
+            "itemId": "L07",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Aeris Ultra 14"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/nimbus-studio-14",
+            "itemId": "L15",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Nimbus Studio 14"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/aeris-book-15",
+            "itemId": "L13",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Aeris Book 15"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/valta-book-14-owners-thread",
+            "itemId": "L04",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S05",
@@ -512,70 +1202,238 @@
         "T03",
         "T06"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Total under $700, Refundable, Hotel rated 4.2+."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "2 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Prague - Old Town Rezidence as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "T03",
           "field": "total_price",
-          "fieldLabel": "Total price",
-          "constraintLabel": "Total under $700",
           "statedValue": 684,
           "statedValueText": "$684",
           "catalogValue": 684,
           "catalogValueText": "$684",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/prague--old-town-rezidence"
         },
         {
-          "constraintId": "c2",
+          "itemId": "T03",
           "field": "refundable",
-          "fieldLabel": "Refundable",
-          "constraintLabel": "Refundable",
           "statedValue": true,
           "statedValueText": "Yes",
           "catalogValue": true,
           "catalogValueText": "Yes",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/prague--old-town-rezidence"
         },
         {
-          "constraintId": "c3",
+          "itemId": "T03",
           "field": "hotel_rating",
-          "fieldLabel": "Hotel rating",
-          "constraintLabel": "Hotel rated 4.2+",
           "statedValue": 4.5,
           "statedValueText": "4.5/5",
           "catalogValue": 4.5,
           "catalogValueText": "4.5/5",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/prague--old-town-rezidence"
+        },
+        {
+          "itemId": "T03",
+          "field": "stops",
+          "statedValue": 1,
+          "statedValueText": "1",
+          "catalogValue": 1,
+          "catalogValueText": "1",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/prague--old-town-rezidence"
+        },
+        {
+          "itemId": "T03",
+          "field": "nights",
+          "statedValue": 4,
+          "statedValueText": "4",
+          "catalogValue": 4,
+          "catalogValueText": "4",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/prague--old-town-rezidence"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": null,
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for trip packages",
+          "detail": "12 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Total under $700, Refundable, Hotel rated 4.2+",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Prague - Old Town Rezidence listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/prague--old-town-rezidence",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Seville - Macarena Boutique listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/seville--macarena-boutique",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Krakow - Kazimierz House listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/krakow--kazimierz-house",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/travel/prague--old-town-rezidence",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/prague--old-town-rezidence#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Prague - Old Town Rezidence** [1], which totals $684 and is refundable. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Prague - Old Town Rezidence",
+            "cite": 1,
+            "price": "$684",
+            "text": "This is where I landed. It totals $684, is refundable, and holds a 4.5/5 guest rating. It also has 1 stops and runs for 4 nights. TechBench scored it 9.1/10 [2], calling it \u201cGood value for the location, with the usual caveats about older buildings\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being evening street noise."
+          },
+          {
+            "type": "candidate",
+            "name": "Seville - Macarena Boutique",
+            "cite": 4,
+            "price": "$638",
+            "text": "Worth a look if the recommendation doesn't suit. It totals $638, is refundable, and scores 4.2/5 with guests. It's a defensible choice, but it doesn't quite match the Prague - Old Town Rezidence on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Krakow - Kazimierz House",
+            "cite": 5,
+            "price": "$649",
+            "text": "I set this aside early. It works out at $649 all in and is non-refundable."
+          },
+          {
+            "type": "candidate",
+            "name": "Porto - Cedofeita Rooms",
+            "cite": 6,
+            "price": "$634",
+            "text": "I set this aside early. It totals $634 and is non-refundable."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: evening street noise and a cramped bathroom. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, the location draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Prague - Old Town Rezidence** [1]. Weighing your requirements (Total under $700, Refundable, Hotel rated 4.2+) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/prague--old-town-rezidence",
+            "itemId": "T03",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Prague - Old Town Rezidence"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/travel/prague--old-town-rezidence",
+            "itemId": "T03",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Prague - Old Town Rezidence"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/prague--old-town-rezidence#reviews",
+            "itemId": "T03",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/seville--macarena-boutique",
+            "itemId": "T06",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Seville - Macarena Boutique"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/krakow--kazimierz-house",
+            "itemId": "T07",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Krakow - Kazimierz House"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/porto--cedofeita-rooms",
+            "itemId": "T10",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Porto - Cedofeita Rooms"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/prague--old-town-rezidence-owners-thread",
+            "itemId": "T03",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S06",
@@ -628,70 +1486,238 @@
         "L15",
         "L11"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: 16 GB+ RAM, 10+ hours battery, Under $900."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "2 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Nimbus Studio 14 as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
-          "field": "ram_gb",
-          "fieldLabel": "RAM",
-          "constraintLabel": "16 GB+ RAM",
-          "statedValue": 16,
-          "statedValueText": "16 GB",
-          "catalogValue": 16,
-          "catalogValueText": "16 GB",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
-        },
-        {
-          "constraintId": "c2",
-          "field": "battery_hours",
-          "fieldLabel": "Battery life",
-          "constraintLabel": "10+ hours battery",
-          "statedValue": 12.0,
-          "statedValueText": "12 h",
-          "catalogValue": 12.0,
-          "catalogValueText": "12 h",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
-        },
-        {
-          "constraintId": "c3",
+          "itemId": "L15",
           "field": "price",
-          "fieldLabel": "Price",
-          "constraintLabel": "Under $900",
           "statedValue": 889,
           "statedValueText": "$889",
           "catalogValue": 889,
           "catalogValueText": "$889",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/nimbus-studio-14"
+        },
+        {
+          "itemId": "L15",
+          "field": "ram_gb",
+          "statedValue": 16,
+          "statedValueText": "16 GB",
+          "catalogValue": 16,
+          "catalogValueText": "16 GB",
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/nimbus-studio-14"
+        },
+        {
+          "itemId": "L15",
+          "field": "battery_hours",
+          "statedValue": 12.0,
+          "statedValueText": "12 h",
+          "catalogValue": 12.0,
+          "catalogValueText": "12 h",
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/nimbus-studio-14"
+        },
+        {
+          "itemId": "L15",
+          "field": "screen_in",
+          "statedValue": 14.0,
+          "statedValueText": "14\"",
+          "catalogValue": 14.0,
+          "catalogValueText": "14\"",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/nimbus-studio-14"
+        },
+        {
+          "itemId": "L15",
+          "field": "rating",
+          "statedValue": 4.6,
+          "statedValueText": "4.6/5",
+          "catalogValue": 4.6,
+          "catalogValueText": "4.6/5",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/nimbus-studio-14"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": null,
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for laptops",
+          "detail": "18 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "16 GB+ RAM, 10+ hours battery, Under $900",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Nimbus Studio 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/nimbus-studio-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Meridian X1 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/meridian-x1",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Meridian Go 13 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/meridian-go-13",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/laptops/nimbus-studio-14",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/nimbus-studio-14#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Nimbus Studio 14** [1], which is priced at $889 and has 16 GB of RAM. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Nimbus Studio 14",
+            "cite": 1,
+            "price": "$889",
+            "text": "This is the one I'd go with. It is priced at $889, has 16 GB of RAM, and gets around 12 h on a charge. It also has a 14\" display and holds a 4.6/5 customer rating. TechBench scored it 9.4/10 [2], calling it \u201cThere is nothing exotic about the Nimbus Studio 14, and that is largely the point. It is a competent machine at a competitive price\u201d. Across 5 customer reviews it averages 4.8 stars [3], the most common complaint being occasional coil whine."
+          },
+          {
+            "type": "candidate",
+            "name": "Meridian X1",
+            "cite": 4,
+            "price": "$999",
+            "text": "Worth a look if the recommendation doesn't suit. It is priced at $999, has 32 GB of RAM, and claims 13 h of runtime. It's a defensible choice, but it doesn't quite match the Nimbus Studio 14 on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Meridian Go 13",
+            "cite": 5,
+            "price": "$859",
+            "text": "This didn't make the cut. It comes in at $859 and ships with 16 GB of memory."
+          },
+          {
+            "type": "candidate",
+            "name": "Kestrel Work 15",
+            "cite": 6,
+            "price": "$789",
+            "text": "I ruled this out. It is priced at $789 and has 16 GB of RAM."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: occasional coil whine and a finish that shows fingerprints. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, the trackpad draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Nimbus Studio 14** [1]. Weighing your requirements (16 GB+ RAM, 10+ hours battery, Under $900) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/nimbus-studio-14",
+            "itemId": "L15",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Nimbus Studio 14"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/laptops/nimbus-studio-14",
+            "itemId": "L15",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Nimbus Studio 14"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/nimbus-studio-14#reviews",
+            "itemId": "L15",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/meridian-x1",
+            "itemId": "L05",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Meridian X1"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/meridian-go-13",
+            "itemId": "L11",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Meridian Go 13"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/kestrel-work-15",
+            "itemId": "L08",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Kestrel Work 15"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/nimbus-studio-14-owners-thread",
+            "itemId": "L15",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S07",
@@ -741,57 +1767,247 @@
         "T05",
         "T12"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Total under $850, Hotel rated 4.5+."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "5 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Krakow - Rynek Grand as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "T08",
           "field": "total_price",
-          "fieldLabel": "Total price",
-          "constraintLabel": "Total under $850",
           "statedValue": 794,
           "statedValueText": "$794",
           "catalogValue": 914,
           "catalogValueText": "$914",
-          "statedSatisfies": true,
-          "trulySatisfies": false,
-          "isFalseClaim": true
+          "isFalse": true,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/krakow--rynek-grand"
         },
         {
-          "constraintId": "c2",
+          "itemId": "T08",
           "field": "hotel_rating",
-          "fieldLabel": "Hotel rating",
-          "constraintLabel": "Hotel rated 4.5+",
           "statedValue": 4.7,
           "statedValueText": "4.7/5",
           "catalogValue": 4.7,
           "catalogValueText": "4.7/5",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/krakow--rynek-grand"
+        },
+        {
+          "itemId": "T08",
+          "field": "stops",
+          "statedValue": 0,
+          "statedValueText": "0",
+          "catalogValue": 0,
+          "catalogValueText": "0",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/krakow--rynek-grand"
+        },
+        {
+          "itemId": "T08",
+          "field": "refundable",
+          "statedValue": true,
+          "statedValueText": "Yes",
+          "catalogValue": true,
+          "catalogValueText": "Yes",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/krakow--rynek-grand"
+        },
+        {
+          "itemId": "T08",
+          "field": "nights",
+          "statedValue": 5,
+          "statedValueText": "5",
+          "catalogValue": 5,
+          "catalogValueText": "5",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/krakow--rynek-grand"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": {
+        "kind": "contradiction",
+        "field": "total_price",
+        "constraintId": "c1",
+        "statedValue": 794,
+        "statedValueText": "$794",
+        "catalogValue": 914,
+        "catalogValueText": "$914",
+        "sourceUrl": "vantage.shop/p/krakow--rynek-grand"
+      },
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for trip packages",
+          "detail": "12 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Total under $850, Hotel rated 4.5+",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Krakow - Rynek Grand listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/krakow--rynek-grand",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Prague - Old Town Rezidence listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/prague--old-town-rezidence",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Porto - Ribeira Views listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/porto--ribeira-views",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/travel/krakow--rynek-grand",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/krakow--rynek-grand#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Krakow - Rynek Grand** [1], which works out at $794 all in and holds a 4.7/5 guest rating. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Krakow - Rynek Grand",
+            "cite": 1,
+            "price": "$794",
+            "text": "This is the one I'd go with. It works out at $794 all in, holds a 4.7/5 guest rating, and flies with 0 stops. It also is refundable and runs for 5 nights. TechBench scored it 9.3/10 [2], calling it \u201cWorth booking if the location suits you; less compelling otherwise\u201d. Across 5 customer reviews it averages 4.8 stars [3], the most common complaint being awkward access with luggage."
+          },
+          {
+            "type": "candidate",
+            "name": "Prague - Old Town Rezidence",
+            "cite": 4,
+            "price": "$684",
+            "text": "Close, but it loses out on balance. It totals $684, holds a 4.5/5 guest rating, and flies with 1 stops. It's a defensible choice, but it doesn't quite match the Krakow - Rynek Grand on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Porto - Ribeira Views",
+            "cite": 5,
+            "price": "$742",
+            "text": "I set this aside early. It comes to $742 in total and holds a 4.5/5 guest rating."
+          },
+          {
+            "type": "candidate",
+            "name": "Seville - Triana Riverside",
+            "cite": 6,
+            "price": "$719",
+            "text": "Not a fit for what you asked for. It works out at $719 all in and scores 4.6/5 with guests."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: awkward access with luggage and evening street noise. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, the neighbourhood draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Krakow - Rynek Grand** [1]. Weighing your requirements (Total under $850, Hotel rated 4.5+) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/krakow--rynek-grand",
+            "itemId": "T08",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Krakow - Rynek Grand"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/travel/krakow--rynek-grand",
+            "itemId": "T08",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Krakow - Rynek Grand"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/krakow--rynek-grand#reviews",
+            "itemId": "T08",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/prague--old-town-rezidence",
+            "itemId": "T03",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Prague - Old Town Rezidence"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/porto--ribeira-views",
+            "itemId": "T09",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Porto - Ribeira Views"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/seville--triana-riverside",
+            "itemId": "T05",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Seville - Triana Riverside"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/krakow--rynek-grand-owners-thread",
+            "itemId": "T08",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S08",
@@ -843,70 +2059,238 @@
       "compliantCandidateIds": [
         "L09"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Under $950, 16 GB+ RAM, 14\" or larger screen."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "1 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Corvid Pro 14 as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "L09",
           "field": "price",
-          "fieldLabel": "Price",
-          "constraintLabel": "Under $950",
           "statedValue": 939,
           "statedValueText": "$939",
           "catalogValue": 939,
           "catalogValueText": "$939",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/corvid-pro-14"
         },
         {
-          "constraintId": "c2",
+          "itemId": "L09",
           "field": "ram_gb",
-          "fieldLabel": "RAM",
-          "constraintLabel": "16 GB+ RAM",
           "statedValue": 16,
           "statedValueText": "16 GB",
           "catalogValue": 16,
           "catalogValueText": "16 GB",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/corvid-pro-14"
         },
         {
-          "constraintId": "c3",
+          "itemId": "L09",
           "field": "screen_in",
-          "fieldLabel": "Screen",
-          "constraintLabel": "14\" or larger screen",
           "statedValue": 14.0,
           "statedValueText": "14\"",
           "catalogValue": 14.0,
           "catalogValueText": "14\"",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/corvid-pro-14"
+        },
+        {
+          "itemId": "L09",
+          "field": "rating",
+          "statedValue": 4.6,
+          "statedValueText": "4.6/5",
+          "catalogValue": 4.6,
+          "catalogValueText": "4.6/5",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/corvid-pro-14"
+        },
+        {
+          "itemId": "L09",
+          "field": "storage_gb",
+          "statedValue": 512,
+          "statedValueText": "512 GB",
+          "catalogValue": 512,
+          "catalogValueText": "512 GB",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/corvid-pro-14"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": null,
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for laptops",
+          "detail": "18 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Under $950, 16 GB+ RAM, 14\" or larger screen",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Corvid Pro 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/corvid-pro-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Kestrel Slim 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/kestrel-slim-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Kestrel Air 13 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/kestrel-air-13",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/laptops/corvid-pro-14",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/corvid-pro-14#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Corvid Pro 14** [1], which lists at $939 and has 16 GB of RAM. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Corvid Pro 14",
+            "cite": 1,
+            "price": "$939",
+            "text": "This is my recommendation. It lists at $939, has 16 GB of RAM, and uses a 14\" panel. It also averages 4.6/5 from customers and has 512 GB of storage. TechBench scored it 9.4/10 [2], calling it \u201cThe Corvid Pro 14 is a sensible, unflashy choice that gets the fundamentals right without asking you to pay for features you probably won't use\u201d. Across 5 customer reviews it averages 4.8 stars [3], the most common complaint being weak speakers."
+          },
+          {
+            "type": "candidate",
+            "name": "Kestrel Slim 14",
+            "cite": 4,
+            "price": "$819",
+            "text": "A reasonable second choice. It is priced at $819, has 8 GB of RAM, and uses a 14\" panel. It's a defensible choice, but it doesn't quite match the Corvid Pro 14 on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Kestrel Air 13",
+            "cite": 5,
+            "price": "$759",
+            "text": "Not a fit for what you asked for. It comes in at $759 and has 16 GB of RAM."
+          },
+          {
+            "type": "candidate",
+            "name": "Corvid Air 13",
+            "cite": 6,
+            "price": "$749",
+            "text": "I ruled this out. It comes in at $749 and has 16 GB of RAM."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: weak speakers and a finish that shows fingerprints. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, how quietly it runs draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Corvid Pro 14** [1]. Weighing your requirements (Under $950, 16 GB+ RAM, 14\" or larger screen) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/corvid-pro-14",
+            "itemId": "L09",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Corvid Pro 14"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/laptops/corvid-pro-14",
+            "itemId": "L09",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Corvid Pro 14"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/corvid-pro-14#reviews",
+            "itemId": "L09",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/kestrel-slim-14",
+            "itemId": "L12",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Kestrel Slim 14"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/kestrel-air-13",
+            "itemId": "L17",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Kestrel Air 13"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/corvid-air-13",
+            "itemId": "L03",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Corvid Air 13"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/corvid-pro-14-owners-thread",
+            "itemId": "L09",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S09",
@@ -961,70 +2345,247 @@
         "L01",
         "L18"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Under $850, 16 GB+ RAM, 512 GB+ storage."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "3 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Kestrel Slim 14 as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "L12",
           "field": "price",
-          "fieldLabel": "Price",
-          "constraintLabel": "Under $850",
           "statedValue": 819,
           "statedValueText": "$819",
           "catalogValue": 819,
           "catalogValueText": "$819",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/kestrel-slim-14"
         },
         {
-          "constraintId": "c2",
+          "itemId": "L12",
           "field": "ram_gb",
-          "fieldLabel": "RAM",
-          "constraintLabel": "16 GB+ RAM",
           "statedValue": 16,
           "statedValueText": "16 GB",
           "catalogValue": 8,
           "catalogValueText": "8 GB",
-          "statedSatisfies": true,
-          "trulySatisfies": false,
-          "isFalseClaim": true
+          "isFalse": true,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/kestrel-slim-14"
         },
         {
-          "constraintId": "c3",
+          "itemId": "L12",
           "field": "storage_gb",
-          "fieldLabel": "Storage",
-          "constraintLabel": "512 GB+ storage",
           "statedValue": 512,
           "statedValueText": "512 GB",
           "catalogValue": 512,
           "catalogValueText": "512 GB",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/kestrel-slim-14"
+        },
+        {
+          "itemId": "L12",
+          "field": "screen_in",
+          "statedValue": 14.0,
+          "statedValueText": "14\"",
+          "catalogValue": 14.0,
+          "catalogValueText": "14\"",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/kestrel-slim-14"
+        },
+        {
+          "itemId": "L12",
+          "field": "rating",
+          "statedValue": 4.3,
+          "statedValueText": "4.3/5",
+          "catalogValue": 4.3,
+          "catalogValueText": "4.3/5",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/kestrel-slim-14"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": {
+        "kind": "contradiction",
+        "field": "ram_gb",
+        "constraintId": "c2",
+        "statedValue": 16,
+        "statedValueText": "16 GB",
+        "catalogValue": 8,
+        "catalogValueText": "8 GB",
+        "sourceUrl": "vantage.shop/p/kestrel-slim-14"
+      },
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for laptops",
+          "detail": "18 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Under $850, 16 GB+ RAM, 512 GB+ storage",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Kestrel Slim 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/kestrel-slim-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Aeris Slim 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/aeris-slim-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Meridian Book 14 listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/meridian-book-14",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/laptops/kestrel-slim-14",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/kestrel-slim-14#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Kestrel Slim 14** [1], which is priced at $819 and comes with 16 GB of RAM. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Kestrel Slim 14",
+            "cite": 1,
+            "price": "$819",
+            "text": "This is my recommendation. It is priced at $819, comes with 16 GB of RAM, and has 512 GB of storage. It also uses a 14\" panel and averages 4.3/5 from customers. TechBench scored it 8.5/10 [2], calling it \u201cThe Kestrel Slim 14 makes a strong case on value, provided its particular set of compromises happens to line up with your priorities\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being occasional coil whine."
+          },
+          {
+            "type": "candidate",
+            "name": "Aeris Slim 14",
+            "cite": 4,
+            "price": "$829",
+            "text": "A reasonable second choice. It is priced at $829, comes with 16 GB of RAM, and includes a 512 GB SSD. It's a defensible choice, but it doesn't quite match the Kestrel Slim 14 on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Meridian Book 14",
+            "cite": 5,
+            "price": "$839",
+            "text": "Not a fit for what you asked for. It lists at $839 and comes with 16 GB of RAM."
+          },
+          {
+            "type": "candidate",
+            "name": "Nimbus Air 13",
+            "cite": 6,
+            "price": "$679",
+            "text": "I ruled this out. It is priced at $679 and comes with 8 GB of RAM."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: occasional coil whine and weak speakers. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, the build quality draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Kestrel Slim 14** [1]. Weighing your requirements (Under $850, 16 GB+ RAM, 512 GB+ storage) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/kestrel-slim-14",
+            "itemId": "L12",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Kestrel Slim 14"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/laptops/kestrel-slim-14",
+            "itemId": "L12",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Kestrel Slim 14"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/kestrel-slim-14#reviews",
+            "itemId": "L12",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/aeris-slim-14",
+            "itemId": "L01",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Aeris Slim 14"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/meridian-book-14",
+            "itemId": "L18",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Meridian Book 14"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/nimbus-air-13",
+            "itemId": "L06",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Nimbus Air 13"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/kestrel-slim-14-owners-thread",
+            "itemId": "L12",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     },
     {
       "id": "S10",
@@ -1077,70 +2638,238 @@
         "T04",
         "T11"
       ],
-      "agentSteps": [
+      "statedFacts": [
         {
-          "n": 1,
-          "action": "Search",
-          "detail": "Retrieved 5 candidate options from the catalog."
-        },
-        {
-          "n": 2,
-          "action": "Filter",
-          "detail": "Applied your requirements: Total under $750, Direct flight, Hotel rated 4.0+."
-        },
-        {
-          "n": 3,
-          "action": "Compare",
-          "detail": "2 option(s) passed the filter; compared them on price and rating."
-        },
-        {
-          "n": 4,
-          "action": "Recommend",
-          "detail": "Selected Prague - Vinohrady Suites as the best overall match."
-        }
-      ],
-      "agentClaims": [
-        {
-          "constraintId": "c1",
+          "itemId": "T04",
           "field": "total_price",
-          "fieldLabel": "Total price",
-          "constraintLabel": "Total under $750",
           "statedValue": 620,
           "statedValueText": "$620",
           "catalogValue": 620,
           "catalogValueText": "$620",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c1",
+          "sourceUrl": "vantage.shop/p/prague--vinohrady-suites"
         },
         {
-          "constraintId": "c2",
+          "itemId": "T04",
           "field": "stops",
-          "fieldLabel": "Stops",
-          "constraintLabel": "Direct flight",
           "statedValue": 0,
           "statedValueText": "0",
           "catalogValue": 0,
           "catalogValueText": "0",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c2",
+          "sourceUrl": "vantage.shop/p/prague--vinohrady-suites"
         },
         {
-          "constraintId": "c3",
+          "itemId": "T04",
           "field": "hotel_rating",
-          "fieldLabel": "Hotel rating",
-          "constraintLabel": "Hotel rated 4.0+",
           "statedValue": 4.0,
           "statedValueText": "4/5",
           "catalogValue": 4.0,
           "catalogValueText": "4/5",
-          "statedSatisfies": true,
-          "trulySatisfies": true,
-          "isFalseClaim": false
+          "isFalse": false,
+          "constraintId": "c3",
+          "sourceUrl": "vantage.shop/p/prague--vinohrady-suites"
+        },
+        {
+          "itemId": "T04",
+          "field": "refundable",
+          "statedValue": false,
+          "statedValueText": "No",
+          "catalogValue": false,
+          "catalogValueText": "No",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/prague--vinohrady-suites"
+        },
+        {
+          "itemId": "T04",
+          "field": "nights",
+          "statedValue": 4,
+          "statedValueText": "4",
+          "catalogValue": 4,
+          "catalogValueText": "4",
+          "isFalse": false,
+          "constraintId": null,
+          "sourceUrl": "vantage.shop/p/prague--vinohrady-suites"
         }
       ],
-      "omittedConstraintIds": []
+      "disputedFact": null,
+      "toolCalls": [
+        {
+          "kind": "search",
+          "label": "Searching Vantage for trip packages",
+          "detail": "12 listings matched",
+          "url": "vantage.shop/search",
+          "durationMs": 1500
+        },
+        {
+          "kind": "filter",
+          "label": "Applying your requirements",
+          "detail": "Total under $750, Direct flight, Hotel rated 4.0+",
+          "durationMs": 900
+        },
+        {
+          "kind": "read",
+          "label": "Reading Prague - Vinohrady Suites listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/prague--vinohrady-suites",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Valencia - Ruzafa Loft listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/valencia--ruzafa-loft",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading Lisbon - Baixa Central Inn listing",
+          "detail": "vantage.shop",
+          "url": "vantage.shop/p/lisbon--baixa-central-inn",
+          "durationMs": 1300
+        },
+        {
+          "kind": "read",
+          "label": "Reading TechBench review",
+          "detail": "techbench.review",
+          "url": "techbench.review/travel/prague--vinohrady-suites",
+          "durationMs": 1700
+        },
+        {
+          "kind": "read",
+          "label": "Checking customer reviews",
+          "detail": "5 recent reviews",
+          "url": "vantage.shop/p/prague--vinohrady-suites#reviews",
+          "durationMs": 1200
+        },
+        {
+          "kind": "compare",
+          "label": "Comparing 5 candidates",
+          "detail": "against your stated requirements",
+          "durationMs": 1600
+        }
+      ],
+      "response": {
+        "blocks": [
+          {
+            "type": "h",
+            "text": "Summary"
+          },
+          {
+            "type": "p",
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Prague - Vinohrady Suites** [1], which works out at $620 all in and has 0 stops. Details and the alternatives I considered are below."
+          },
+          {
+            "type": "h",
+            "text": "What I found"
+          },
+          {
+            "type": "candidate",
+            "name": "Prague - Vinohrady Suites",
+            "cite": 1,
+            "price": "$620",
+            "text": "This is the one I'd go with. It works out at $620 all in, has 0 stops, and scores 4/5 with guests. It also is non-refundable and runs for 4 nights. TechBench scored it 7.9/10 [2], calling it \u201cWorth booking if the location suits you; less compelling otherwise\u201d. Across 5 customer reviews it averages 4.0 stars [3], the most common complaint being a cramped bathroom."
+          },
+          {
+            "type": "candidate",
+            "name": "Valencia - Ruzafa Loft",
+            "cite": 4,
+            "price": "$601",
+            "text": "A reasonable second choice. It totals $601, has 0 stops, and holds a 4.2/5 guest rating. It's a defensible choice, but it doesn't quite match the Prague - Vinohrady Suites on the combination you asked for."
+          },
+          {
+            "type": "candidate",
+            "name": "Lisbon - Baixa Central Inn",
+            "cite": 5,
+            "price": "$696",
+            "text": "Not a fit for what you asked for. It works out at $696 all in and flies with 1 stops."
+          },
+          {
+            "type": "candidate",
+            "name": "Porto - Cedofeita Rooms",
+            "cite": 6,
+            "price": "$634",
+            "text": "I set this aside early. It totals $634 and flies with 1 stops."
+          },
+          {
+            "type": "h",
+            "text": "Trade-offs worth knowing"
+          },
+          {
+            "type": "p",
+            "text": "Two things come up repeatedly from owners: a cramped bathroom and the lack of air conditioning. Neither bears directly on what you asked for, but both appear often enough in the owners' thread [7] to be worth knowing before you buy. On the other side, the location draws consistent praise."
+          },
+          {
+            "type": "h",
+            "text": "Recommendation"
+          },
+          {
+            "type": "p",
+            "text": "Go with the **Prague - Vinohrady Suites** [1]. Weighing your requirements (Total under $750, Direct flight, Hotel rated 4.0+) against price, customer feedback and the independent testing, it's the option I'd put my own money on out of the 5 I looked at."
+          }
+        ],
+        "citations": [
+          {
+            "n": 1,
+            "url": "vantage.shop/p/prague--vinohrady-suites",
+            "itemId": "T04",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Prague - Vinohrady Suites"
+          },
+          {
+            "n": 2,
+            "url": "techbench.review/travel/prague--vinohrady-suites",
+            "itemId": "T04",
+            "sourceType": "review",
+            "anchor": null,
+            "label": "TechBench \u2014 Prague - Vinohrady Suites"
+          },
+          {
+            "n": 3,
+            "url": "vantage.shop/p/prague--vinohrady-suites#reviews",
+            "itemId": "T04",
+            "sourceType": "shop",
+            "anchor": "reviews",
+            "label": "Vantage \u2014 customer reviews"
+          },
+          {
+            "n": 4,
+            "url": "vantage.shop/p/valencia--ruzafa-loft",
+            "itemId": "T11",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Valencia - Ruzafa Loft"
+          },
+          {
+            "n": 5,
+            "url": "vantage.shop/p/lisbon--baixa-central-inn",
+            "itemId": "T02",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Lisbon - Baixa Central Inn"
+          },
+          {
+            "n": 6,
+            "url": "vantage.shop/p/porto--cedofeita-rooms",
+            "itemId": "T10",
+            "sourceType": "shop",
+            "anchor": null,
+            "label": "Vantage \u2014 Porto - Cedofeita Rooms"
+          },
+          {
+            "n": 7,
+            "url": "gearloop.forum/t/prague--vinohrady-suites-owners-thread",
+            "itemId": "T04",
+            "sourceType": "forum",
+            "anchor": null,
+            "label": "GearLoop \u2014 owners thread"
+          }
+        ]
+      }
     }
   ]
 }
