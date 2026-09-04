@@ -106,9 +106,10 @@ the stimuli are wrong.
   ```
   Expect an empty array or a permission error — **never** participant rows. If rows
   come back, your RLS policy is wrong and participant data is world-readable.
-- [ ] **3.5** Deploy. Any static host works; the build output is `app/dist`.
-      Vercel: import the repo, root directory `app`, framework Vite, add the same
-      env vars in the dashboard.
+- [x] **[DONE]** **3.5** Deployed to AWS (S3 + CloudFront, OAC-locked bucket) — see
+      `deploy/aws/README.md` for the live URL and how to redeploy after a code
+      change. (Any static host works if you'd rather switch later: Vercel/Netlify,
+      import the repo, root directory `app`, framework Vite.)
 - [ ] **3.6** Test the deployed URL exactly as a participant will receive it,
       including the `?PROLIFIC_PID=...` parameters.
 

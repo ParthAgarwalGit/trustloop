@@ -18,6 +18,10 @@ trustloop_*.json
 # rather version the exact figures that went into a submission.
 figures/
 
+# AWS deployment state (bucket name, distribution id/ARN). Not secret, but it's
+# specific to one person's account -- no reason for it to live in git.
+deploy/aws/state.json
+
 # ---------------------------------------------------------------------------
 # Secrets
 # ---------------------------------------------------------------------------
