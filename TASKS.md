@@ -106,10 +106,11 @@ the stimuli are wrong.
   ```
   Expect an empty array or a permission error — **never** participant rows. If rows
   come back, your RLS policy is wrong and participant data is world-readable.
-- [x] **[DONE]** **3.5** Deployed to AWS (S3 + CloudFront, OAC-locked bucket) — see
-      `deploy/aws/README.md` for the live URL and how to redeploy after a code
-      change. (Any static host works if you'd rather switch later: Vercel/Netlify,
-      import the repo, root directory `app`, framework Vite.)
+- [x] **[DONE]** **3.5** Hosted on GitHub Pages from a separate, neutrally named repo
+      (`ParthAgarwalGit/shop-assistant-study`, built site only, no sourcemaps) at
+      https://parthagarwalgit.github.io/shop-assistant-study/ — publish with
+      `python deploy/pages/publish.py` (see `deploy/pages/README.md`). The earlier
+      AWS deployment (`deploy/aws/`) is retired: the subscription lapsed.
 - [ ] **3.6** Test the deployed URL exactly as a participant will receive it,
       including the `?PROLIFIC_PID=...` parameters.
 

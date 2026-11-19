@@ -188,6 +188,10 @@ def _phrase(field: str, value_text: str, domain: str, seed: str) -> str:
         return f"has {field.replace('_', ' ')} of {value_text}"
     if field == "refundable":
         return options[0] if value_text == "Yes" else options[1]
+    if field == "stops":
+        # "has 1 stops" is exactly the kind of slip that reads as templated text.
+        return {"0": "flies direct", "1": "has 1 stop"}.get(
+            value_text, f"has {value_text} stops")
     return _pick(options, seed + field).format(v=value_text)
 
 

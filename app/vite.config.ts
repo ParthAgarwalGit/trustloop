@@ -11,5 +11,7 @@ export default defineConfig({
   server: process.env.PORT
     ? { port: Number(process.env.PORT), strictPort: true }
     : undefined,
-  build: { outDir: "dist", sourcemap: true },
+  // SOURCEMAP=false for public hosting: maps expose the commented source, which
+  // explains the planted errors to anyone who opens devtools.
+  build: { outDir: "dist", sourcemap: process.env.SOURCEMAP !== "false" },
 });

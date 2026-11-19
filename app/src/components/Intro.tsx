@@ -56,8 +56,9 @@ export function Consent({ onConsent }: { onConsent: () => void }) {
         <h3>Who can I contact?</h3>
         <p>
           {STUDY_CONTACT.researcher}, {STUDY_CONTACT.institution} &mdash;{" "}
-          {STUDY_CONTACT.email}. This study was approved under ethics reference{" "}
-          {STUDY_CONTACT.ethicsRef}.
+          {STUDY_CONTACT.email}.
+          {STUDY_CONTACT.ethicsRef &&
+            ` This study was approved under ethics reference ${STUDY_CONTACT.ethicsRef}.`}
         </p>
 
         <label className="consent-check">

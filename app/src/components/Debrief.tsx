@@ -105,7 +105,8 @@ export function Debrief({
         <h3>Questions</h3>
         <p>
           {STUDY_CONTACT.researcher}, {STUDY_CONTACT.institution} &mdash;{" "}
-          {STUDY_CONTACT.email} (ethics reference {STUDY_CONTACT.ethicsRef}).
+          {STUDY_CONTACT.email}
+          {STUDY_CONTACT.ethicsRef && ` (ethics reference ${STUDY_CONTACT.ethicsRef})`}.
         </p>
 
         {!result && (
@@ -134,8 +135,21 @@ export function Debrief({
             <p>
               {withdrawn
                 ? "Your data has been marked for deletion and will not be analysed."
-                : "Your responses have been recorded. Thank you for taking part."}
+                : result.sink === "local"
+                  ? "Your responses are saved in this browser only. Please download them below and send the file to the researcher."
+                  : "Your responses have been recorded. Thank you for taking part."}
             </p>
+            {result.sink === "local" && !withdrawn && (
+              <p>
+                <button
+                  type="button"
+                  className="btn btn--secondary"
+                  onClick={() => downloadJson(payload)}
+                >
+                  Download my responses
+                </button>
+              </p>
+            )}
             {COMPLETION_CODE && (
               <p>
                 Your completion code is <strong>{COMPLETION_CODE}</strong>.

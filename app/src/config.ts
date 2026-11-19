@@ -71,5 +71,7 @@ export const STUDY_CONTACT = {
   researcher: import.meta.env.VITE_RESEARCHER_NAME ?? "[Researcher name]",
   email: import.meta.env.VITE_RESEARCHER_EMAIL ?? "[contact email]",
   institution: import.meta.env.VITE_INSTITUTION ?? "[Institution]",
-  ethicsRef: import.meta.env.VITE_ETHICS_REF ?? "[ethics approval number]",
+  // Empty when unset: the consent and debrief screens then omit the approval
+  // sentence rather than display a bracket or imply an approval that does not exist.
+  ethicsRef: import.meta.env.VITE_ETHICS_REF ?? "",
 };

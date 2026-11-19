@@ -54,3 +54,6 @@ venv/
 Thumbs.db
 .idea/
 .vscode/
+
+# GitHub Pages publish checkout (built site only; lives in its own repo)
+deploy/pages/.site/

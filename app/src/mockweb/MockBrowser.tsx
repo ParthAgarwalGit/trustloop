@@ -170,7 +170,7 @@ export function MockBrowser({
       </div>
 
       <div className="browser__hint">
-        Press <kbd>Esc</kbd> or use ← to return to your assistant.
+        Tap ← (top left) or press <kbd>Esc</kbd> to return to your assistant.
       </div>
     </div>
   );

@@ -472,14 +472,14 @@
             "name": "Valencia - Ruzafa Loft",
             "cite": 1,
             "price": "$601",
-            "text": "This is the strongest option of the set. It totals $601, scores 4.2/5 with guests, and flies with 0 stops. It also is refundable and runs for 3 nights. TechBench scored it 8.3/10 [2], calling it \u201cA dependable, well-located option that does the basics properly\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being unreliable Wi-Fi."
+            "text": "This is the strongest option of the set. It totals $601, scores 4.2/5 with guests, and flies direct. It also is refundable and runs for 3 nights. TechBench scored it 8.3/10 [2], calling it \u201cA dependable, well-located option that does the basics properly\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being unreliable Wi-Fi."
           },
           {
             "type": "candidate",
             "name": "Prague - Vinohrady Suites",
             "cite": 4,
             "price": "$620",
-            "text": "A reasonable second choice. It comes to $620 in total, holds a 4/5 guest rating, and has 0 stops. It's a defensible choice, but it doesn't quite match the Valencia - Ruzafa Loft on the combination you asked for."
+            "text": "A reasonable second choice. It comes to $620 in total, holds a 4/5 guest rating, and flies direct. It's a defensible choice, but it doesn't quite match the Valencia - Ruzafa Loft on the combination you asked for."
           },
           {
             "type": "candidate",
@@ -1335,7 +1335,7 @@
             "name": "Prague - Old Town Rezidence",
             "cite": 1,
             "price": "$684",
-            "text": "This is where I landed. It totals $684, is refundable, and holds a 4.5/5 guest rating. It also has 1 stops and runs for 4 nights. TechBench scored it 9.1/10 [2], calling it \u201cGood value for the location, with the usual caveats about older buildings\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being evening street noise."
+            "text": "This is where I landed. It totals $684, is refundable, and holds a 4.5/5 guest rating. It also has 1 stop and runs for 4 nights. TechBench scored it 9.1/10 [2], calling it \u201cGood value for the location, with the usual caveats about older buildings\u201d. Across 5 customer reviews it averages 4.2 stars [3], the most common complaint being evening street noise."
           },
           {
             "type": "candidate",
@@ -1909,14 +1909,14 @@
             "name": "Krakow - Rynek Grand",
             "cite": 1,
             "price": "$794",
-            "text": "This is the one I'd go with. It works out at $794 all in, holds a 4.7/5 guest rating, and flies with 0 stops. It also is refundable and runs for 5 nights. TechBench scored it 9.3/10 [2], calling it \u201cWorth booking if the location suits you; less compelling otherwise\u201d. Across 5 customer reviews it averages 4.8 stars [3], the most common complaint being awkward access with luggage."
+            "text": "This is the one I'd go with. It works out at $794 all in, holds a 4.7/5 guest rating, and flies direct. It also is refundable and runs for 5 nights. TechBench scored it 9.3/10 [2], calling it \u201cWorth booking if the location suits you; less compelling otherwise\u201d. Across 5 customer reviews it averages 4.8 stars [3], the most common complaint being awkward access with luggage."
           },
           {
             "type": "candidate",
             "name": "Prague - Old Town Rezidence",
             "cite": 4,
             "price": "$684",
-            "text": "Close, but it loses out on balance. It totals $684, holds a 4.5/5 guest rating, and flies with 1 stops. It's a defensible choice, but it doesn't quite match the Krakow - Rynek Grand on the combination you asked for."
+            "text": "Close, but it loses out on balance. It totals $684, holds a 4.5/5 guest rating, and has 1 stop. It's a defensible choice, but it doesn't quite match the Krakow - Rynek Grand on the combination you asked for."
           },
           {
             "type": "candidate",
@@ -2760,7 +2760,7 @@
           },
           {
             "type": "p",
-            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Prague - Vinohrady Suites** [1], which works out at $620 all in and has 0 stops. Details and the alternatives I considered are below."
+            "text": "I looked at 5 options on Vantage and checked the most promising ones against independent reviews. My recommendation is the **Prague - Vinohrady Suites** [1], which works out at $620 all in and flies direct. Details and the alternatives I considered are below."
           },
           {
             "type": "h",
@@ -2771,28 +2771,28 @@
             "name": "Prague - Vinohrady Suites",
             "cite": 1,
             "price": "$620",
-            "text": "This is the one I'd go with. It works out at $620 all in, has 0 stops, and scores 4/5 with guests. It also is non-refundable and runs for 4 nights. TechBench scored it 7.9/10 [2], calling it \u201cWorth booking if the location suits you; less compelling otherwise\u201d. Across 5 customer reviews it averages 4.0 stars [3], the most common complaint being a cramped bathroom."
+            "text": "This is the one I'd go with. It works out at $620 all in, flies direct, and scores 4/5 with guests. It also is non-refundable and runs for 4 nights. TechBench scored it 7.9/10 [2], calling it \u201cWorth booking if the location suits you; less compelling otherwise\u201d. Across 5 customer reviews it averages 4.0 stars [3], the most common complaint being a cramped bathroom."
           },
           {
             "type": "candidate",
             "name": "Valencia - Ruzafa Loft",
             "cite": 4,
             "price": "$601",
-            "text": "A reasonable second choice. It totals $601, has 0 stops, and holds a 4.2/5 guest rating. It's a defensible choice, but it doesn't quite match the Prague - Vinohrady Suites on the combination you asked for."
+            "text": "A reasonable second choice. It totals $601, flies direct, and holds a 4.2/5 guest rating. It's a defensible choice, but it doesn't quite match the Prague - Vinohrady Suites on the combination you asked for."
           },
           {
             "type": "candidate",
             "name": "Lisbon - Baixa Central Inn",
             "cite": 5,
             "price": "$696",
-            "text": "Not a fit for what you asked for. It works out at $696 all in and flies with 1 stops."
+            "text": "Not a fit for what you asked for. It works out at $696 all in and has 1 stop."
           },
           {
             "type": "candidate",
             "name": "Porto - Cedofeita Rooms",
             "cite": 6,
             "price": "$634",
-            "text": "I set this aside early. It totals $634 and flies with 1 stops."
+            "text": "I set this aside early. It totals $634 and has 1 stop."
           },
           {
             "type": "h",
