@@ -98,8 +98,8 @@ export function Debrief({
         <h3>Your data</h3>
         <p>
           Now that you know what was withheld, you can ask us not to use your
-          responses. Your payment is not affected either way, and you do not need to
-          give a reason.
+          responses. There is no penalty either way, and you do not need to give a
+          reason.
         </p>
 
         <h3>Questions</h3>
