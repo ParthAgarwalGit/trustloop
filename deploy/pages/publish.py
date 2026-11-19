@@ -64,9 +64,16 @@ def main() -> int:
     env_vals = read_env()
     if not args.preview:
         missing = [k for k in REQUIRED_FOR_REAL if not env_vals.get(k)]
-        if env_vals.get("VITE_DATA_SINK", "none") == "none":
+        sink = env_vals.get("VITE_DATA_SINK", "none")
+        if sink == "none":
             missing.append("VITE_DATA_SINK (must not be 'none': responses would "
                            "never reach you)")
+        if sink == "supabase":
+            # Without these every submission fails at the debrief screen.
+            missing += [k for k in ("VITE_SUPABASE_URL", "VITE_SUPABASE_ANON_KEY")
+                        if not env_vals.get(k)]
+        if sink == "endpoint" and not env_vals.get("VITE_POST_ENDPOINT"):
+            missing.append("VITE_POST_ENDPOINT")
         if missing:
             sys.exit("Refusing a real publish. Set these in app/.env:\n  - "
                      + "\n  - ".join(missing)

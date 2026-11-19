@@ -40,10 +40,13 @@ export function Consent({ onConsent }: { onConsent: () => void }) {
 
         <h3>What data do we collect?</h3>
         <p>
-          Your choices, response times, confidence ratings and questionnaire answers,
-          plus your platform participant ID for payment. We do not collect your name,
-          email address or IP address. Data are stored pseudonymously and reported
-          only in aggregate.
+          Your choices, response times, confidence ratings and questionnaire answers.
+          We also record how you use the study interface: which pages you open, how
+          long you spend on them, how far you scroll, where you move your cursor, and
+          what you click. If you arrived from a research platform, we store its
+          participant ID. We do not collect your name, email address, IP address or
+          anything you type outside the questionnaire. Data are stored pseudonymously
+          and reported only in aggregate.
         </p>
 
         <h3>Do I have to take part?</h3>
