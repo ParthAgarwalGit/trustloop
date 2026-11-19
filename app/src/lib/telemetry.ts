@@ -59,7 +59,7 @@ export class Telemetry {
   private idleTimer: number | null = null;
   private detach: Array<() => void> = [];
 
-  trialId = "";
+  trialId = "consent"; // the first screen is shown on load, not via a phase change
   surface = "agent";
 
   start(): void {

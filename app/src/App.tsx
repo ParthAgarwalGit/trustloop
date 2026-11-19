@@ -71,6 +71,9 @@ export default function App() {
 
   const go = (next: Phase, payload?: Record<string, unknown>) => {
     log.current.add(`phase:${next}`, payload);
+    // Outside the trials, label telemetry with the phase name. Otherwise every
+    // questionnaire click keeps the last trial's id and is counted against it.
+    if (next !== "trials") telemetry.trialId = next;
     setPhase(next);
     window.scrollTo({ top: 0 });
   };
