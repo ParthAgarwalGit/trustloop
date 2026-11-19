@@ -29,13 +29,15 @@ export function Consent({ onConsent }: { onConsent: () => void }) {
         <h3>How long will it take?</h3>
         <p>About 15&ndash;20 minutes.</p>
 
-        <h3>Is anything withheld?</h3>
+        {/* Authorised-deception notice. It must stay: it is what makes the reveal
+            at the debrief something participants agreed to in advance. It is
+            deliberately unspecific -- naming ShopBot or its behaviour here would
+            prime exactly the vigilance the study measures. */}
+        <h3>What happens at the end?</h3>
         <p>
-          Yes. To keep your responses natural, we are not describing the full purpose
-          of the study in advance, and some details of how ShopBot behaves are not
-          disclosed until the end. You will receive a complete explanation on the
-          final screen, and you will be able to withdraw your data at that point if
-          you would rather we did not use it.
+          The final screen explains the purpose of the study in full. You can choose
+          at that point to withdraw your responses if you would rather we did not use
+          them.
         </p>
 
         <h3>What data do we collect?</h3>
